@@ -1,0 +1,90 @@
+{
+  "id": "shadowrun5e",
+  "name": "shadowrun5e",
+  "title": "Shadowrun 5th Edition",
+  "description": "Shadowrun 5th Edition game",
+  "authors": [{
+      "name": "Shawn Milligan",
+      "discord": "n3rf_herder#9026"
+    },{
+      "name": "Andrew Cuccinello",
+      "discord": "DJ#1982"
+    },{
+      "name": "Jan Schoska",
+      "discord": "taM#9507"
+  }],
+  "url": "https://github.com/smilligan93/SR5-FoundryVTT",
+  "bugs": "https://github.com/smilligan93/SR5-FoundryVTT/issues",
+  "flags": {
+    "allowBugReporter": true
+  },
+  "version": "0.8.4",
+  "compatibility": {
+    "minimum": "10",
+    "maximum": "10",
+    "verified": "10.286"
+  },
+  "minimumCoreVersion": "10",
+  "scripts": [],
+  "esmodules": [
+    "dist/bundle.js"
+  ],
+  "styles": [
+    "dist/bundle.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "dist/locale/en/config.json"
+    },
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "path": "dist/locale/de/config.json"
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "dist/locale/pt-BR/config.json"
+    },
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "dist/locale/fr/config.json"
+    },
+    {
+      "lang": "ko",
+      "name": "Korean",
+      "path": "dist/locale/ko/config.json"
+    }
+  ],
+  "packs": [
+    {
+      "name": "Matrix Actions",
+      "label": "SR5e Matrix Actions",
+      "path": "./packs/sr5e-matrix-actions.db",
+      "private": false,
+      "type": "Item",
+      "system": "shadowrun5e"
+    },
+    {
+      "name": "General Actions",
+      "label": "SR5e General Actions",
+      "path": "./packs/sr5e-general-actions.db",
+      "private": false,
+      "type": "Item",
+      "system": "shadowrun5e"
+    }
+  ],
+  "system": [],
+  "socket": true,
+  "manifest": "https://raw.githubusercontent.com/smilligan93/SR5-FoundryVTT/master/system.json",
+  "download": "https://github.com/smilligan93/SR5-FoundryVTT/archive/v0.8.4.zip",
+  "protected": false,
+  "initiative": "@initiative.current.base.value + @initiative.current.dice.text - @wounds.value",
+  "gridDistance": 1,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "track.physical",
+  "secondaryTokenAttribute": "track.stun"
+}

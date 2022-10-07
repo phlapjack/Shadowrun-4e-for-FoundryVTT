@@ -1,0 +1,53 @@
+/**
+ * CSS for Test Dialog styling.
+ */
+@import 'config';
+
+.sr5.form-dialog {
+  .dialog-title {
+    font-weight: bold;
+    height: 30px;
+  }
+
+  .form-group {
+    label {
+      font-weight: normal;
+    }
+
+    input {
+      color: $white;
+    }
+
+    // Avoid overlong selects to break flow acrooss rows.
+    select {
+      width: 100%;
+    }
+  }
+
+
+  .dialog-content-common {
+    h2 {
+      text-underline: none;
+      border: none;
+      margin: 0;
+    }
+
+    .sunken {
+      padding: 0.5em;
+    }
+
+
+  }
+
+  .dialog-content-column {
+    width: 300px;
+  }
+
+  .sunken select {
+    color: white;
+  }
+
+  .sunken select option {
+    background-color: $dark-sunken;
+  }
+}
