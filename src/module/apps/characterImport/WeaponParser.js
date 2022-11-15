@@ -55,7 +55,7 @@ export class WeaponParser {
         };
         action.type = 'varies';
 
-        // Transform Chummer skill naming schema to shadowrun5e naming schema.
+        // Transform Chummer skill naming schema to shadowrun4e naming schema.
         // NOTE: chummerWeapon.skill CAN be null. Don't rely on it.
         if (chummerWeapon.skill) {
             action.skill = chummerWeapon.skill.toLowerCase().replace(/\s/g, '_');

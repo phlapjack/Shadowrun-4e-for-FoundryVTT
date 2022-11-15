@@ -11,7 +11,7 @@ declare global {
         socket: never; // disable socket ready checks
     }
 
-    // Configuration of shadowrun5e system
+    // Configuration of shadowrun4e system
     interface SourceConfig {
         Item: ShadowrunItemData;
         Actor: ShadowrunActorData;

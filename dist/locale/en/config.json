@@ -911,7 +911,7 @@
     "TestExpectsVehicleOnly": "This test can only be cast with a vehicle type actor"
   },
   "SR5.ChangelogApplication": {
-    "Title": "Shadowrun5e Update",
+    "Title": "shadowrun4e Update",
     "Reason": "You've updated to the latest version!",
     "Changelog": "Check out our GitHub for new features and fixes",
     "LatestChangelog": "Latest Changelog",

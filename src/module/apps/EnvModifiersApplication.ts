@@ -20,7 +20,7 @@ export class EnvModifiersApplication extends Application {
     }
 
     get template() {
-        return 'systems/shadowrun5e/dist/templates/apps/env-modifiers.html';
+        return 'systems/shadowrun4e/dist/templates/apps/env-modifiers.html';
     }
 
     static get defaultOptions() {

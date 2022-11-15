@@ -26,7 +26,7 @@ export class SR5ItemSheet extends ItemSheet {
     }
 
     get template() {
-        const path = 'systems/shadowrun5e/dist/templates/item/';
+        const path = 'systems/shadowrun4e/dist/templates/item/';
         return `${path}${this.item.data.type}.html`;
     }
 
@@ -118,13 +118,13 @@ export class SR5ItemSheet extends ItemSheet {
 
         // Provide action parts with all test variantes.
         // @ts-ignore // TODO: put 'opposed test types' into config (see data.config)
-        data.tests = game.shadowrun5e.tests;
+        data.tests = game.shadowrun4e.tests;
         // @ts-ignore
-        data.opposedTests = game.shadowrun5e.opposedTests;
+        data.opposedTests = game.shadowrun4e.opposedTests;
         // @ts-ignore
-        data.activeTests = game.shadowrun5e.activeTests;
+        data.activeTests = game.shadowrun4e.activeTests;
         // @ts-ignore
-        data.resistTests = game.shadowrun5e.resistTests;
+        data.resistTests = game.shadowrun4e.resistTests;
 
         // @ts-ignore TODO: foundry-vtt-types v10
         data.descriptionHTML = await TextEditor.enrichHTML(this.item.system.description.value, {

@@ -1,5 +1,5 @@
 <form class="{{cssClass}} wholesheet" autocomplete="off">
-    {{> "systems/shadowrun5e/dist/templates/item/parts/header.html"}}
+    {{> "systems/shadowrun4e/dist/templates/item/parts/header.html"}}
     <nav class="tabs" data-group="primary">
         <a class="item" data-tab="description">{{localize "SR5.Description"}}</a>
         <a class="item" data-tab="host">{{localize "SR5.ItemTypes.Host"}}</a>
@@ -25,23 +25,23 @@
                         </div>
                     </div>
                 </div>
-                {{> "systems/shadowrun5e/dist/templates/item/parts/description.html"}}
+                {{> "systems/shadowrun4e/dist/templates/item/parts/description.html"}}
             </div>
         </div>
         <div class="tab" data-group="primary" data-tab="host">
             <div class="tabbody">
                 <div class="inventory">
                     <div class="scroll-area">
-                        {{> 'systems/shadowrun5e/dist/templates/common/List/ListHeader.html'
+                        {{> 'systems/shadowrun4e/dist/templates/common/List/ListHeader.html'
                                 name=(localize "SR5.Host.Attributes")
                         }}
-                        {{> "systems/shadowrun5e/dist/templates/item/parts/matrix.html"}}
+                        {{> "systems/shadowrun4e/dist/templates/item/parts/matrix.html"}}
                         {{#if false}}
-                        {{> 'systems/shadowrun5e/dist/templates/common/List/ListHeader.html'
+                        {{> 'systems/shadowrun4e/dist/templates/common/List/ListHeader.html'
                                 name=(localize "SR5.Host.ICOrder")
                         }}
                         {{#each system.ic as | ic |}}
-                        {{> 'systems/shadowrun5e/dist/templates/common/List/ListEntityItem.html'
+                        {{> 'systems/shadowrun4e/dist/templates/common/List/ListEntityItem.html'
                                 id=ic.id
                                 linkName=ic.name
                                 pack=pack
@@ -50,7 +50,7 @@
                                 position=@index
                                 missingLabel="SR5.Host.MissingIC"
                         }}
-                        {{> 'systems/shadowrun5e/dist/templates/common/List/ListItem.html'
+                        {{> 'systems/shadowrun4e/dist/templates/common/List/ListItem.html'
                             name=ic.name
                             itemId=ic.id
                             itemType="actor"
@@ -58,7 +58,7 @@
                             itemNameCssClass="skill-roll"
                         }}
                         {{else}}
-                        {{> 'systems/shadowrun5e/dist/templates/common/List/ListItem.html'
+                        {{> 'systems/shadowrun4e/dist/templates/common/List/ListItem.html'
                                     name=(localize "SR5.Host.DropICActor")
                         }}
                         {{/each}}
@@ -68,9 +68,9 @@
             </div>
         </div>
         <div class="tab" data-group="primary" data-tab="marks">
-            {{> 'systems/shadowrun5e/dist/templates/actor/parts/matrix/Marks.html' }}
+            {{> 'systems/shadowrun4e/dist/templates/actor/parts/matrix/Marks.html' }}
         </div>
-        {{> "systems/shadowrun5e/dist/templates/actor/tabs/NetworkTab.html"}}
-        {{> "systems/shadowrun5e/dist/templates/actor/tabs/EffectsTab.html"}}
+        {{> "systems/shadowrun4e/dist/templates/actor/tabs/NetworkTab.html"}}
+        {{> "systems/shadowrun4e/dist/templates/actor/tabs/EffectsTab.html"}}
     </section>
 </form>

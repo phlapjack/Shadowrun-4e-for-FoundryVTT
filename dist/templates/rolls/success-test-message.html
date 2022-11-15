@@ -94,7 +94,7 @@
     </div>
     <div class="card-rolls {{#if applyGmOnlyContent}}gm-only-content{{/if}}">
         {{#each test.rolls}}
-            {{> 'systems/shadowrun5e/dist/templates/rolls/parts/rolled-dice.html'
+            {{> 'systems/shadowrun4e/dist/templates/rolls/parts/rolled-dice.html'
                 roll=this
             }}
         {{/each}}
@@ -150,7 +150,7 @@
 <div class="sr5 chat-card roll-card">
     <div class="card-content">
         <div class="left-side">
-            {{> 'systems/shadowrun5e/dist/templates/rolls/parts/Damage.html'
+            {{> 'systems/shadowrun4e/dist/templates/rolls/parts/Damage.html'
                 name=(localize "SR5.Incoming")
                 damage=test.data.damage
                 showAP=true

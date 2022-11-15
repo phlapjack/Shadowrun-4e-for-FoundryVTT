@@ -1,8 +1,8 @@
-{{#> 'systems/shadowrun5e/dist/templates/common/TabWrapper.html' tabId='effects'}}
+{{#> 'systems/shadowrun4e/dist/templates/common/TabWrapper.html' tabId='effects'}}
     <div class="inventory">
         <div class="scroll-area">
         {{#each effects as |section sid|}}
-            {{> 'systems/shadowrun5e/dist/templates/common/List/ListHeader.html'
+            {{> 'systems/shadowrun4e/dist/templates/common/List/ListHeader.html'
                 name=(localize section.label)
                 icons=(ItemHeaderIcons 'effect')
                 rightSide=(ItemHeaderRightSide 'TODO')
@@ -10,7 +10,7 @@
             }}
 
             {{#each section.effects as |effect|}}
-                 {{> 'systems/shadowrun5e/dist/templates/common/List/ListItem.html'
+                 {{> 'systems/shadowrun4e/dist/templates/common/List/ListItem.html'
                     img=effect.icon
                     name=effect.label
                     itemId=effect.id
@@ -23,4 +23,4 @@
         {{/each}}
         </div>
     </div>
-{{/'systems/shadowrun5e/dist/templates/common/TabWrapper.html'}}
+{{/'systems/shadowrun4e/dist/templates/common/TabWrapper.html'}}

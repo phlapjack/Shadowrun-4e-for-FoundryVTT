@@ -183,7 +183,7 @@ export class SR5Actor extends Actor {
         try {
             super.applyActiveEffects();
         } catch (error) {
-            console.error(`Shadowrun5e | Some effect changes could not be applied and might cause issues. Check effects of actor (${this.name}) / id (${this.id})`);
+            console.error(`shadowrun4e | Some effect changes could not be applied and might cause issues. Check effects of actor (${this.name}) / id (${this.id})`);
             console.error(error);
             ui.notifications?.error(`See browser console (F12): Some effect changes could not be applied and might cause issues. Check effects of actor (${this.name}) / id (${this.id})`);
         }
@@ -747,7 +747,7 @@ export class SR5Actor extends Actor {
     async addKnowledgeSkill(category, skill?): Promise<string|undefined> {
         //@ts-ignore // prevent accidental creation for wrong categories
         if (!this.system.skills.knowledge.hasOwnProperty(category)) {
-            console.error(`Shadowrun5e | Tried creating knowledge skill with unkown category ${category}`);
+            console.error(`shadowrun4e | Tried creating knowledge skill with unkown category ${category}`);
             return;
         }
         
@@ -971,7 +971,7 @@ export class SR5Actor extends Actor {
      * @param options.specialization true to configure the skill test to use a specialization.
      */
     async rollSkill(skillId: string, options: SkillRollOptions={}) {
-        console.info(`Shadowrun5e | Rolling skill test for ${skillId}`);
+        console.info(`shadowrun4e | Rolling skill test for ${skillId}`);
 
         const action = this.skillActionData(skillId, options);
         if (!action) return;
@@ -1023,7 +1023,7 @@ export class SR5Actor extends Actor {
      * @param options Change general roll options.
      */
     async rollAttribute(name, options?: ActorRollOptions) {
-        console.info(`Shadowrun5e | Rolling attribute ${name} test from ${this.constructor.name}`);
+        console.info(`shadowrun4e | Rolling attribute ${name} test from ${this.constructor.name}`);
 
         // Prepare test from action.
         const action = DefaultValues.actionData({attribute: name, test: AttributeOnlyTest.name});
@@ -1286,7 +1286,7 @@ export class SR5Actor extends Actor {
      * @param healing How many boxes of healing should be done?
      */
     async healDamage(track: DamageType, healing: number) {
-        console.log(`Shadowrun5e | Healing ${track} damage of ${healing} for actor`, this);
+        console.log(`shadowrun4e | Healing ${track} damage of ${healing} for actor`, this);
 
         // @ts-ignore
         if (!this.system?.track.hasOwnProperty(track)) return

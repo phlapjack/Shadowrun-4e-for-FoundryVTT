@@ -29,11 +29,11 @@ export class ComplexFormTest extends SuccessTest {
     }
 
     get _dialogTemplate()  {
-        return 'systems/shadowrun5e/dist/templates/apps/dialogs/complexform-test-dialog.html';
+        return 'systems/shadowrun4e/dist/templates/apps/dialogs/complexform-test-dialog.html';
     }
 
     get _chatMessageTemplate(): string {
-        return 'systems/shadowrun5e/dist/templates/rolls/complexform-test-message.html';
+        return 'systems/shadowrun4e/dist/templates/rolls/complexform-test-message.html';
     }
 
     /**

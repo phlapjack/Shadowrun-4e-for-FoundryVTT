@@ -35,11 +35,11 @@ export class SpellCastingTest extends SuccessTest {
     }
 
     get _dialogTemplate()  {
-        return 'systems/shadowrun5e/dist/templates/apps/dialogs/spellcasting-test-dialog.html';
+        return 'systems/shadowrun4e/dist/templates/apps/dialogs/spellcasting-test-dialog.html';
     }
 
     get _chatMessageTemplate(): string {
-        return 'systems/shadowrun5e/dist/templates/rolls/spellcasting-test-message.html';
+        return 'systems/shadowrun4e/dist/templates/rolls/spellcasting-test-message.html';
     }
 
     /**

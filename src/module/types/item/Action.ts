@@ -21,7 +21,7 @@ declare namespace Shadowrun {
      */
     export interface ActionRollData extends MinimalActionData {
         // Test test class used for the active action test
-        // Should be defined in game.shadowrun5e.activeTests
+        // Should be defined in game.shadowrun4e.activeTests
         test: string
         // The type of combat action to be performed.
         type: string

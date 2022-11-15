@@ -2,12 +2,12 @@ import {FLAGS, SYSTEM_NAME} from "../constants";
 
 export class ChangelogApplication extends Application {
     get template(): string {
-        return 'systems/shadowrun5e/dist/templates/apps/changelog.html';
+        return 'systems/shadowrun4e/dist/templates/apps/changelog.html';
     }
 
     static get defaultOptions() {
         const options = super.defaultOptions;
-        options.classes = ['shadowrun5e'];
+        options.classes = ['shadowrun4e'];
         options.title = game.i18n.localize('SR5.ChangelogApplication.Title');
         options.width = 500;
         options.height = 'auto';

@@ -2,7 +2,7 @@
 /**
  * All functions have been taken from : https://gitlab.com/foundrynet/dnd5e/-/blob/master/module/effects.js
  *
- * There have been some alterations made to fit the Shadowrun5e system.
+ * There have been some alterations made to fit the shadowrun4e system.
  */
 
 import {SR5Actor} from "./actor/SR5Actor";

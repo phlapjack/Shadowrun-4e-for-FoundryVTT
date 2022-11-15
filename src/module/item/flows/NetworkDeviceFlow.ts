@@ -86,7 +86,7 @@ export class NetworkDeviceFlow {
      * @param device
      */
     static async addDeviceToNetwork(controller: SR5Item, device: SR5Item) {
-        console.log(`Shadowrun5e | Adding an the item ${device.name} to the controller ${controller.name}`, controller, device);
+        console.log(`shadowrun4e | Adding an the item ${device.name} to the controller ${controller.name}`, controller, device);
         if (controller.id === device.id) return console.warn('Shadowrun 5e | A device cant be its own network controller');
         const technologyData = device.getTechnologyData();
         if (!technologyData) return ui.notifications?.error(game.i18n.localize('SR5.Errors.CanOnlyAddTechnologyItemsToANetwork'));
@@ -260,7 +260,7 @@ export class NetworkDeviceFlow {
 
         controllerData.data.networkDevices.forEach(link => {
             const device = NetworkDeviceFlow.resolveLink(link);
-            if (!device) return console.warn(`Shadowrun5e | Controller ${controller.name} has a network device ${link} that doesn't exist anymore`);
+            if (!device) return console.warn(`shadowrun4e | Controller ${controller.name} has a network device ${link} that doesn't exist anymore`);
             devices.push(device);
         });
 

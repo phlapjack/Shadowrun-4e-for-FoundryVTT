@@ -58,7 +58,7 @@ import MarkedDocument = Shadowrun.MarkedDocument;
 import RollEvent = Shadowrun.RollEvent;
 
 /**
- * Implementation of Shadowrun5e items (owned, unowned and embedded).
+ * Implementation of shadowrun4e items (owned, unowned and embedded).
  *
  *       tamIf here: The current legacy embedded items approach has been cleaned up a bit but is still causing some issues
  *       with typing and ease of use.
@@ -837,7 +837,7 @@ export class SR5Item extends Item {
 
 
     async rollOpposedTest(target: SR5Actor, attack: AttackData, event):  Promise<void> {
-        console.error(`Shadowrun5e | ${this.constructor.name}.rollOpposedTest is not supported anymore`);
+        console.error(`shadowrun4e | ${this.constructor.name}.rollOpposedTest is not supported anymore`);
     }
 
     async rollTestType(type: string, attack: AttackData, event, target: SR5Actor) {
@@ -1033,7 +1033,7 @@ export class SR5Item extends Item {
         if (!items) return;
 
         const idx = items.findIndex((i) => i._id === deleted || Number(i._id) === deleted);
-        if (idx === -1) throw new Error(`Shadowrun5e | Couldn't find owned item ${deleted}`);
+        if (idx === -1) throw new Error(`shadowrun4e | Couldn't find owned item ${deleted}`);
         items.splice(idx, 1);
         // we need to clear the items when one is deleted or it won't actually be deleted
         await this.clearNestedItems();

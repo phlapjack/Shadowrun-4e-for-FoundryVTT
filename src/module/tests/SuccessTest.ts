@@ -298,7 +298,7 @@ export class SuccessTest {
      * FoundryVTT documentation:
      *  Dice:       https://foundryvtt.com/article/dice-advanced/
      *  Modifiers:  https://foundryvtt.com/article/dice-modifiers/
-     * Shadowrun5e: SR5#44
+     * shadowrun4e: SR5#44
      *
      */
     get formula(): string {
@@ -374,11 +374,11 @@ export class SuccessTest {
     }
 
     get _dialogTemplate(): string {
-        return 'systems/shadowrun5e/dist/templates/apps/dialogs/success-test-dialog.html';
+        return 'systems/shadowrun4e/dist/templates/apps/dialogs/success-test-dialog.html';
     }
 
     get _chatMessageTemplate(): string {
-        return 'systems/shadowrun5e/dist/templates/rolls/success-test-message.html';
+        return 'systems/shadowrun4e/dist/templates/rolls/success-test-message.html';
     }
 
     /**
@@ -1097,7 +1097,7 @@ export class SuccessTest {
      * This can be used to trigger other processes like followup tests or saving values.
      */
     async afterTestComplete() {
-        console.log(`Shadowrun5e | Test ${this.constructor.name} completed.`, this);
+        console.log(`shadowrun4e | Test ${this.constructor.name} completed.`, this);
 
         if (this.success) {
             await this.afterSuccess();
@@ -1195,7 +1195,7 @@ export class SuccessTest {
         // @ts-ignore
         if (!game.dice3d || !game.user || !game.users) return;
 
-        console.log('Shadowrun5e | Initiating DiceSoNice throw');
+        console.log('shadowrun4e | Initiating DiceSoNice throw');
 
         // Only roll the last dice rolled.
         // This necessary when a test has been recast with second chance, and should only the re-rolled dice instead
@@ -1605,7 +1605,7 @@ export class SuccessTest {
         const messageId = element.closest('.chat-message').data('messageId');
         const test = await TestCreator.fromMessage(messageId);
         
-        if (!test) return console.error(`Shadowrun5e | Couldn't find both a result action ('${resultAction}') and extract test from message ('${messageId}')`);
+        if (!test) return console.error(`shadowrun4e | Couldn't find both a result action ('${resultAction}') and extract test from message ('${messageId}')`);
         
         await test.populateDocuments();
         await ActionResultFlow.executeResult(resultAction, test);

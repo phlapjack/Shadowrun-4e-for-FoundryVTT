@@ -416,7 +416,7 @@ export class Helpers {
         for (const uuid of testData.targetActorsUuid) {
             const tokenDoc = await fromUuid(uuid);
             if (!(tokenDoc instanceof TokenDocument)) {
-                console.error(`Shadowrun5e | Been given testData with targets. UUID ${uuid} should point to a TokenDocument but doesn't`, tokenDoc);
+                console.error(`Shadowrun4e | Been given testData with targets. UUID ${uuid} should point to a TokenDocument but doesn't`, tokenDoc);
                 continue;
             }
             if (!tokenDoc.actor) continue;
@@ -888,7 +888,7 @@ export class Helpers {
         const item = await pack.getDocument(packEntry._id) as unknown as SR5Item;
         if (!item || item.type !== 'action') return;
 
-        console.info(`Shadowrun5e | Fetched action ${actionName} from pack ${packName}`, item);
+        console.info(`shadowrun4e | Fetched action ${actionName} from pack ${packName}`, item);
         return item;
     }
 

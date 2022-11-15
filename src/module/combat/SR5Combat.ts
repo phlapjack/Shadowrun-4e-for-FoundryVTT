@@ -350,7 +350,7 @@ export class SR5Combat extends Combat {
      * @param id
      */
     static onPreUpdateCombatant(combatant: Combatant, changed, options, id) {
-        console.log('Shadowrun5e | Handle preUpdateCombatant to apply system rules', combatant, changed);
+        console.log('shadowrun4e | Handle preUpdateCombatant to apply system rules', combatant, changed);
 
         // Disallow invalid ini scores to be applied by any source.
         if (changed.initiative) changed.initiative = CombatRules.getValidInitiativeScore(changed.initiative);

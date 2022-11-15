@@ -102,7 +102,7 @@ export class ShadowrunActorDialogs {
             return {cover, special, parts, combat};
         }
 
-        const templatePath = 'systems/shadowrun5e/dist/templates/rolls/roll-defense.html';
+        const templatePath = 'systems/shadowrun4e/dist/templates/rolls/roll-defense.html';
         const templateData = {
             parts: parts.getMessageOutput(),
             cover: options.cover,
@@ -122,7 +122,7 @@ export class ShadowrunActorDialogs {
     static getSoakDialogData(soakRollOptions: SoakRollOptions, soakParts : PartsList<number>): FormDialogData {
         const title = game.i18n.localize('SR5.DamageResistanceTest');
 
-        const templatePath = 'systems/shadowrun5e/dist/templates/rolls/roll-soak.html';
+        const templatePath = 'systems/shadowrun4e/dist/templates/rolls/roll-soak.html';
         const templateData = {
             damage: soakRollOptions?.damage,
             parts: soakParts.getMessageOutput(),
@@ -157,7 +157,7 @@ export class ShadowrunActorDialogs {
 
     static getSkillDialogData(actor: SR5Actor, options: SkillDialogOptions, partsProps: PartsList<number>): FormDialogData {
         const title = game.i18n.localize(options.skill.label || options.skill.name);
-        const templatePath = 'systems/shadowrun5e/dist/templates/rolls/skill-roll.html';
+        const templatePath = 'systems/shadowrun4e/dist/templates/rolls/skill-roll.html';
 
         const attributes = actor.getAttributes();
         const attribute = actor.getAttribute(options.attribute ? options.attribute : options.skill.attribute);

@@ -57,7 +57,7 @@ export const SR5CONFIG = SR5;
 
 export class HooksManager {
     static registerHooks() {
-        console.log('Shadowrun 5e | Registering system hooks');
+        console.log('Shadowrun 4e | Registering system hooks');
         // Register your highest level hook callbacks here for a quick overview of what's hooked into.
 
         Hooks.once('init', HooksManager.init);
@@ -95,8 +95,8 @@ ___________________
 \\____/\\_| \\_\\____/ 
 ===================
 `);
-        // Create a shadowrun5e namespace within the game global
-        game['shadowrun5e'] = {
+        // Create a shadowrun4e namespace within the game global
+        game['shadowrun4e'] = {
             /**
              * System level Document implementations.
              */
@@ -365,7 +365,7 @@ ___________________
      * Must be called on 'ready' or after game.shadowrun is registered.
      */
     static renderChatMessage() {
-        console.debug('Shadowrun5e | Registering new chat messages related hooks');
+        console.debug('shadowrun4e | Registering new chat messages related hooks');
     }
 
     static renderItemDirectory(app: Application, html: JQuery) {
@@ -416,7 +416,7 @@ ___________________
      */
     static registerSocketListeners() {
         if (!game.socket || !game.user) return;
-        console.log('Registering Shadowrun5e system socket messages...');
+        console.log('Registering shadowrun4e system socket messages...');
         const hooks: SocketMessageHooks = {
             [FLAGS.addNetworkController]: [NetworkDeviceFlow._handleAddNetworkControllerSocketMessage],
             [FLAGS.DoNextRound]: [SR5Combat._handleDoNextRoundSocketMessage],
@@ -460,7 +460,7 @@ ___________________
         const DATA_MODE = api.CONST.DATA_MODE;
 
         const config = {
-            packageName: "shadowrun5e",
+            packageName: "shadowrun4e",
             sheetClasses: [{
                 name: "ActiveEffectConfig",
                 fieldConfigs: [

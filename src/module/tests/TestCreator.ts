@@ -78,7 +78,7 @@ export const TestCreator = {
         }
 
         // @ts-ignore // Check for test class registration.
-        if (!game.shadowrun5e.tests.hasOwnProperty(action.test)) {
+        if (!game.shadowrun4e.tests.hasOwnProperty(action.test)) {
             console.error(`Shadowrun 5e | Test registration for test ${action.test} is missing`);
             return;
         }
@@ -105,7 +105,7 @@ export const TestCreator = {
         }
 
         // @ts-ignore // Check for test class registration.
-        if (!game.shadowrun5e.tests.hasOwnProperty(action.test)) {
+        if (!game.shadowrun4e.tests.hasOwnProperty(action.test)) {
             console.error(`Shadowrun 5e | Test registration for test ${action.test} is missing`);
             return;
         }
@@ -296,11 +296,11 @@ export const TestCreator = {
      */
     _getTestClass: function(testName: string): any | undefined {
         //@ts-ignore
-        if (!game.shadowrun5e.tests.hasOwnProperty(testName)) { //@ts-ignore
-            console.error(`Shadowrun 5e | Tried getting a Test Class ${testName}, which isn't registered in: `, game.shadowrun5e.tests);
+        if (!game.shadowrun4e.tests.hasOwnProperty(testName)) { //@ts-ignore
+            console.error(`Shadowrun 5e | Tried getting a Test Class ${testName}, which isn't registered in: `, game.shadowrun4e.tests);
             return;
         } //@ts-ignore
-        return game.shadowrun5e.tests[testName];
+        return game.shadowrun4e.tests[testName];
     },
 
     /**

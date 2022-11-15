@@ -29,11 +29,11 @@ export class FadeTest extends SuccessTest {
     }
 
     get _dialogTemplate() {
-        return 'systems/shadowrun5e/dist/templates/apps/dialogs/fade-test-dialog.html';
+        return 'systems/shadowrun4e/dist/templates/apps/dialogs/fade-test-dialog.html';
     }
 
     get _chatMessageTemplate(): string {
-        return 'systems/shadowrun5e/dist/templates/rolls/fade-test-message.html';
+        return 'systems/shadowrun4e/dist/templates/rolls/fade-test-message.html';
     }
 
     static _getDefaultTestAction(): Partial<MinimalActionData> {

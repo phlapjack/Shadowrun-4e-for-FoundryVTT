@@ -131,7 +131,7 @@ export class CombatSpellRules {
      */
     static defenseTestAction(spellType: SpellType, combatType: CombatSpellType): MinimalActionData {
         if (spellType === '' || combatType === '')
-            console.warn(`Shadowrun5e | The given spell or combat spell types are empty and won't form a complete defense test action`);
+            console.warn(`shadowrun4e | The given spell or combat spell types are empty and won't form a complete defense test action`);
 
         const itemAction = DefaultValues.minimalActionData();
 

@@ -882,7 +882,7 @@
     "TestExpectsVehicleOnly": "Diese Probe kann nur mit einem Fahrzeug Akteur geworfen werden"
   },
   "SR5.ChangelogApplication": {
-    "Title": "Shadowrun5e Update",
+    "Title": "shadowrun4e Update",
     "Reason": "Du hast die aktuellste Version installiert!",
     "Changelog": "Für neue Funktionen und behobene Fehler",
     "LatestChangelog": "Aktueller Changelog",

@@ -11,7 +11,7 @@ export type SystemMigrationDocuments = SR5Actor|SR5Item|Scene;
  *  other methods are implementable purely for convenience and atomicity.
  */
 export abstract class VersionMigration {
-    static readonly MODULE_NAME = 'shadowrun5e';
+    static readonly MODULE_NAME = 'shadowrun4e';
     static readonly KEY_DATA_VERSION = 'systemMigrationVersion';
     static readonly NO_VERSION = '0';
 

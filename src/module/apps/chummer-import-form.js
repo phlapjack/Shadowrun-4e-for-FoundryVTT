@@ -5,9 +5,9 @@ export class ChummerImportForm extends FormApplication {
     static get defaultOptions() {
         const options = super.defaultOptions;
         options.id = 'chummer-import';
-        options.classes = ['shadowrun5e'];
+        options.classes = ['shadowrun4e'];
         options.title = 'Chummer/Hero Lab Import';
-        options.template = 'systems/shadowrun5e/dist/templates/apps/import.html';
+        options.template = 'systems/shadowrun4e/dist/templates/apps/import.html';
         options.width = 600;
         options.height = 'auto';
         return options;

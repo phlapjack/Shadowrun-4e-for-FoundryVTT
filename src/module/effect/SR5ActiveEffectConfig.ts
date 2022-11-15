@@ -1,6 +1,6 @@
 export class SR5ActiveEffectConfig extends ActiveEffectConfig {
     get template(): string {
-        return 'systems/shadowrun5e/dist/templates/effect/active-effect-config.html';
+        return 'systems/shadowrun4e/dist/templates/effect/active-effect-config.html';
     }
 
     getData(options?: Application.RenderOptions): Promise<ActiveEffectConfig.Data> | ActiveEffectConfig.Data {

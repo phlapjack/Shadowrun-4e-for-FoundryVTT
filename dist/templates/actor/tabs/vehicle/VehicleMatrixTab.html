@@ -1,10 +1,10 @@
-{{#> 'systems/shadowrun5e/dist/templates/common/TabWrapper.html' tabId='matrix'}}
+{{#> 'systems/shadowrun4e/dist/templates/common/TabWrapper.html' tabId='matrix'}}
     <div>
-        {{> "systems/shadowrun5e/dist/templates/common/HeaderBlock.html"
+        {{> "systems/shadowrun4e/dist/templates/common/HeaderBlock.html"
                 name=(localize "SR5.Labels.ActorSheet.Matrix")
         }}
         <div class="attributes">
-            {{> "systems/shadowrun5e/dist/templates/actor/parts/matrix/DeviceRating.html" }}
+            {{> "systems/shadowrun4e/dist/templates/actor/parts/matrix/DeviceRating.html" }}
             <div class="block">
                 <div class="block-line gap-4 border-bottom center">
                     <label>
@@ -21,7 +21,7 @@
                     <div class="attribute-name">
                         {{localize "SR5.ConditionMonitor"}}
                     </div>
-                    {{> 'systems/shadowrun5e/dist/templates/common/HorizontalCellInput.html'
+                    {{> 'systems/shadowrun4e/dist/templates/common/HorizontalCellInput.html'
                             value=system.matrix.condition_monitor.value
                             max=system.matrix.condition_monitor.max
                             id="matrix"
@@ -29,7 +29,7 @@
                 </div>
             </div>
             {{#each config.matrixAttributes as |label key|}}
-                {{> "systems/shadowrun5e/dist/templates/actor/parts/matrix/MatrixAttribute.html"
+                {{> "systems/shadowrun4e/dist/templates/actor/parts/matrix/MatrixAttribute.html"
                         matrixAtt=(lookup ../system.matrix key)
                         isCyberdeck=../system.matrix.is_cyberdeck
                         key=key
@@ -40,6 +40,6 @@
         </div>
     </div>
     <div class="inventory">
-        {{> 'systems/shadowrun5e/dist/templates/actor/parts/matrix/ProgramList.html' }}
+        {{> 'systems/shadowrun4e/dist/templates/actor/parts/matrix/ProgramList.html' }}
     </div>
-{{/ 'systems/shadowrun5e/dist/templates/common/TabWrapper.html'}}
+{{/ 'systems/shadowrun4e/dist/templates/common/TabWrapper.html'}}

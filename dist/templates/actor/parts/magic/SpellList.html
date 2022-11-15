@@ -1,11 +1,11 @@
-{{> 'systems/shadowrun5e/dist/templates/common/List/ListHeader.html'
+{{> 'systems/shadowrun4e/dist/templates/common/List/ListHeader.html'
         name=(localize 'SR5.Spells')
         itemId='spell'
         icons=(ItemHeaderIcons 'spell')
         rightSide=(ItemHeaderRightSide 'spell')
 }}
 {{#each itemType.spell as |item i|}}
-    {{> 'systems/shadowrun5e/dist/templates/common/List/ListItem.html'
+    {{> 'systems/shadowrun4e/dist/templates/common/List/ListItem.html'
             img=item.img
             name=item.name
             itemId=item._id

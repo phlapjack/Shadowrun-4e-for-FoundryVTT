@@ -19,13 +19,13 @@ export const quenchRegister = (quench) => {
 
     console.warn('Shadowrun 5e | Be aware that FoundryVTT will tank in update performance when a lot of documents are in collections. This is the case if you have all Chummer items imported and might cause tests to cross the 2000ms quench timeout threshold. Clear those collections in a test world. :)');
 
-    quench.registerBatch("shadowrun5e.rules.matrix", shadowrunMatrix, {displayName: "SHADOWRUN5e: Matrix Test"});
-    quench.registerBatch("shadowrun5e.rules.modifiers", shadowrunRulesModifiers, {displayName: "SHADOWRUN5e: Modifiers Test"});
-    quench.registerBatch("shadowrun5e.entities.items", shadowrunSR5Item, {displayName: "SHADOWRUN5e: SR5Item Test"});
-    quench.registerBatch("shadowrun5e.entities.actors", shadowrunSR5Actor, {displayName: "SHADOWRUN5e: SR5Actor Test"});
-    quench.registerBatch("shadowrun5e.entities.effects", shadowrunSR5ActiveEffect, {displayName: "SHADOWRUN5e: SR5ActiveEffect Test"});
-    quench.registerBatch("shadowrun5e.data_prep.actor", shadowrunSR5ActorDataPrep, {displayName: "SHADOWRUN5e: SR5ActorDataPreparation Test"});
-    quench.registerBatch("shadowrun5e.flow.networkDevices", shadowrunNetworkDevices, {displayName: "SHADOWRUN5e: Matrix Network Devices Test"});
-    quench.registerBatch("shadowrun5e.flow.inventory", shadowrunInventoryFlow, {displayName: "SHADOWRUN5e: InventoryFlow Test"});
-    quench.registerBatch("shadowrun5e.flow.tests", shadowrunTesting, {displayName: "SHADOWRUN5e: SuccessTest Test"});
+    quench.registerBatch("shadowrun4e.rules.matrix", shadowrunMatrix, {displayName: "shadowrun4e: Matrix Test"});
+    quench.registerBatch("shadowrun4e.rules.modifiers", shadowrunRulesModifiers, {displayName: "shadowrun4e: Modifiers Test"});
+    quench.registerBatch("shadowrun4e.entities.items", shadowrunSR5Item, {displayName: "shadowrun4e: SR5Item Test"});
+    quench.registerBatch("shadowrun4e.entities.actors", shadowrunSR5Actor, {displayName: "shadowrun4e: SR5Actor Test"});
+    quench.registerBatch("shadowrun4e.entities.effects", shadowrunSR5ActiveEffect, {displayName: "shadowrun4e: SR5ActiveEffect Test"});
+    quench.registerBatch("shadowrun4e.data_prep.actor", shadowrunSR5ActorDataPrep, {displayName: "shadowrun4e: SR5ActorDataPreparation Test"});
+    quench.registerBatch("shadowrun4e.flow.networkDevices", shadowrunNetworkDevices, {displayName: "shadowrun4e: Matrix Network Devices Test"});
+    quench.registerBatch("shadowrun4e.flow.inventory", shadowrunInventoryFlow, {displayName: "shadowrun4e: InventoryFlow Test"});
+    quench.registerBatch("shadowrun4e.flow.tests", shadowrunTesting, {displayName: "shadowrun4e: SuccessTest Test"});
 };

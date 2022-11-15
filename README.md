@@ -1,4 +1,4 @@
-# Shadowrun5e for Foundry Virtual Tabletop
+# shadowrun4e for Foundry Virtual Tabletop
 Manifest: https://raw.githubusercontent.com/smilligan93/SR5-FoundryVTT/master/system.json
 
 We will always be happy to look at a Pull Request if there are features or bugs you'd like to work on.

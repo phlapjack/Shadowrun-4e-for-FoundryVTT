@@ -8625,105 +8625,105 @@ var require_xml2js = __commonJS({
 // src/module/handlebars/HandlebarTemplates.ts
 var preloadHandlebarsTemplates = () => __async(void 0, null, function* () {
   const templatePaths = [
-    "systems/shadowrun5e/dist/templates/actor/tabs/ActionsTab.html",
-    "systems/shadowrun5e/dist/templates/actor/tabs/BioTab.html",
-    "systems/shadowrun5e/dist/templates/actor/tabs/MagicTab.html",
-    "systems/shadowrun5e/dist/templates/actor/tabs/MatrixTab.html",
-    "systems/shadowrun5e/dist/templates/actor/tabs/MiscTab.html",
-    "systems/shadowrun5e/dist/templates/actor/tabs/SkillsTab.html",
-    "systems/shadowrun5e/dist/templates/actor/tabs/SocialTab.html",
-    "systems/shadowrun5e/dist/templates/actor/tabs/SpellsTab.html",
-    "systems/shadowrun5e/dist/templates/actor/tabs/EffectsTab.html",
-    "systems/shadowrun5e/dist/templates/actor/tabs/CritterPowersTab.html",
-    "systems/shadowrun5e/dist/templates/actor/tabs/NetworkTab.html",
-    "systems/shadowrun5e/dist/templates/actor/tabs/InventoryTab.html",
-    "systems/shadowrun5e/dist/templates/actor/tabs/spirit/SpiritSkillsTab.html",
-    "systems/shadowrun5e/dist/templates/actor/tabs/matrix/SpriteSkillsTab.html",
-    "systems/shadowrun5e/dist/templates/actor/tabs/matrix/SpritePowersTab.html",
-    "systems/shadowrun5e/dist/templates/actor/tabs/vehicle/VehicleSkillsTab.html",
-    "systems/shadowrun5e/dist/templates/actor/tabs/vehicle/VehicleMatrixTab.html",
-    "systems/shadowrun5e/dist/templates/actor/tabs/ic/ICActorTab.html",
-    "systems/shadowrun5e/dist/templates/actor/tabs/ic/ICMiscTab.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/Initiative.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/Movement.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/ProfileImage.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/NameInput.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/ActionList.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/ContactList.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/SinAndLifestyleList.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/magic/AdeptPowerList.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/magic/SpellList.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/magic/SpellAndAdeptPowerList.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/magic/SpiritOptions.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/matrix/ProgramList.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/matrix/ComplexFormList.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/matrix/MatrixAttribute.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/matrix/SpritePowerList.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/matrix/DeviceRating.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/matrix/Marks.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/attributes/Attribute.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/attributes/AttributeList.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/attributes/SpecialAttributeList.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/attributes/Limits.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/skills/ActiveSkillList.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/skills/LanguageAndKnowledgeSkillList.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/vehicle/VehicleStatsList.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/vehicle/VehicleSecondStatsList.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/vehicle/VehicleMovement.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/ic/ICStats.html",
-    "systems/shadowrun5e/dist/templates/actor/parts/ic/ICConfiguration.html",
-    "systems/shadowrun5e/dist/templates/actor-limited/character.html",
-    "systems/shadowrun5e/dist/templates/actor-limited/spirit.html",
-    "systems/shadowrun5e/dist/templates/actor-limited/sprite.html",
-    "systems/shadowrun5e/dist/templates/actor-limited/vehicle.html",
-    "systems/shadowrun5e/dist/templates/actor-limited/critter.html",
-    "systems/shadowrun5e/dist/templates/actor-limited/parts/Header.html",
-    "systems/shadowrun5e/dist/templates/actor-limited/parts/MiscCharacter.html",
-    "systems/shadowrun5e/dist/templates/actor-limited/parts/MiscSpirit.html",
-    "systems/shadowrun5e/dist/templates/actor-limited/parts/MiscSprite.html",
-    "systems/shadowrun5e/dist/templates/actor-limited/parts/MiscVehicle.html",
-    "systems/shadowrun5e/dist/templates/actor-limited/parts/MiscCritter.html",
-    "systems/shadowrun5e/dist/templates/item/parts/description.html",
-    "systems/shadowrun5e/dist/templates/item/parts/technology.html",
-    "systems/shadowrun5e/dist/templates/item/parts/header.html",
-    "systems/shadowrun5e/dist/templates/item/parts/weapon-ammo-list.html",
-    "systems/shadowrun5e/dist/templates/item/parts/weapon-mods-list.html",
-    "systems/shadowrun5e/dist/templates/item/parts/action.html",
-    "systems/shadowrun5e/dist/templates/item/parts/action_results.html",
-    "systems/shadowrun5e/dist/templates/item/parts/modifier.html",
-    "systems/shadowrun5e/dist/templates/item/parts/damage.html",
-    "systems/shadowrun5e/dist/templates/item/parts/opposed.html",
-    "systems/shadowrun5e/dist/templates/item/parts/spell.html",
-    "systems/shadowrun5e/dist/templates/item/parts/complex_form.html",
-    "systems/shadowrun5e/dist/templates/item/parts/weapon.html",
-    "systems/shadowrun5e/dist/templates/item/parts/armor.html",
-    "systems/shadowrun5e/dist/templates/item/parts/matrix.html",
-    "systems/shadowrun5e/dist/templates/item/parts/sin.html",
-    "systems/shadowrun5e/dist/templates/item/parts/contact.html",
-    "systems/shadowrun5e/dist/templates/item/parts/lifestyle.html",
-    "systems/shadowrun5e/dist/templates/item/parts/ammo.html",
-    "systems/shadowrun5e/dist/templates/item/parts/modification.html",
-    "systems/shadowrun5e/dist/templates/item/parts/program.html",
-    "systems/shadowrun5e/dist/templates/item/parts/critter_power.html",
-    "systems/shadowrun5e/dist/templates/rolls/parts/parts-list.html",
-    "systems/shadowrun5e/dist/templates/rolls/parts/Damage.html",
-    "systems/shadowrun5e/dist/templates/common/TabWrapper.html",
-    "systems/shadowrun5e/dist/templates/common/ValueInput.html",
-    "systems/shadowrun5e/dist/templates/common/ValueMaxAttribute.html",
-    "systems/shadowrun5e/dist/templates/common/Attribute.html",
-    "systems/shadowrun5e/dist/templates/common/ValueModifiers.html",
-    "systems/shadowrun5e/dist/templates/common/Select.html",
-    "systems/shadowrun5e/dist/templates/common/HorizontalCellInput.html",
-    "systems/shadowrun5e/dist/templates/common/HeaderBlock.html",
-    "systems/shadowrun5e/dist/templates/common/NameLineBlock.html",
-    "systems/shadowrun5e/dist/templates/common/List/ListItem.html",
-    "systems/shadowrun5e/dist/templates/common/List/ListEntityItem.html",
-    "systems/shadowrun5e/dist/templates/common/List/ListHeader.html",
-    "systems/shadowrun5e/dist/templates/apps/dialogs/damage-application.html",
-    "systems/shadowrun5e/dist/templates/apps/dialogs/parts/success-test-common.html",
-    "systems/shadowrun5e/dist/templates/rolls/success-test-message.html",
-    "systems/shadowrun5e/dist/templates/rolls/parts/rolled-dice.html",
-    "systems/shadowrun5e/dist/templates/rolls/parts/test-opposed-resist.html"
+    "systems/shadowrun4e/dist/templates/actor/tabs/ActionsTab.html",
+    "systems/shadowrun4e/dist/templates/actor/tabs/BioTab.html",
+    "systems/shadowrun4e/dist/templates/actor/tabs/MagicTab.html",
+    "systems/shadowrun4e/dist/templates/actor/tabs/MatrixTab.html",
+    "systems/shadowrun4e/dist/templates/actor/tabs/MiscTab.html",
+    "systems/shadowrun4e/dist/templates/actor/tabs/SkillsTab.html",
+    "systems/shadowrun4e/dist/templates/actor/tabs/SocialTab.html",
+    "systems/shadowrun4e/dist/templates/actor/tabs/SpellsTab.html",
+    "systems/shadowrun4e/dist/templates/actor/tabs/EffectsTab.html",
+    "systems/shadowrun4e/dist/templates/actor/tabs/CritterPowersTab.html",
+    "systems/shadowrun4e/dist/templates/actor/tabs/NetworkTab.html",
+    "systems/shadowrun4e/dist/templates/actor/tabs/InventoryTab.html",
+    "systems/shadowrun4e/dist/templates/actor/tabs/spirit/SpiritSkillsTab.html",
+    "systems/shadowrun4e/dist/templates/actor/tabs/matrix/SpriteSkillsTab.html",
+    "systems/shadowrun4e/dist/templates/actor/tabs/matrix/SpritePowersTab.html",
+    "systems/shadowrun4e/dist/templates/actor/tabs/vehicle/VehicleSkillsTab.html",
+    "systems/shadowrun4e/dist/templates/actor/tabs/vehicle/VehicleMatrixTab.html",
+    "systems/shadowrun4e/dist/templates/actor/tabs/ic/ICActorTab.html",
+    "systems/shadowrun4e/dist/templates/actor/tabs/ic/ICMiscTab.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/Initiative.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/Movement.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/ProfileImage.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/NameInput.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/ActionList.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/ContactList.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/SinAndLifestyleList.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/magic/AdeptPowerList.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/magic/SpellList.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/magic/SpellAndAdeptPowerList.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/magic/SpiritOptions.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/matrix/ProgramList.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/matrix/ComplexFormList.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/matrix/MatrixAttribute.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/matrix/SpritePowerList.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/matrix/DeviceRating.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/matrix/Marks.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/attributes/Attribute.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/attributes/AttributeList.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/attributes/SpecialAttributeList.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/attributes/Limits.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/skills/ActiveSkillList.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/skills/LanguageAndKnowledgeSkillList.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/vehicle/VehicleStatsList.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/vehicle/VehicleSecondStatsList.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/vehicle/VehicleMovement.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/ic/ICStats.html",
+    "systems/shadowrun4e/dist/templates/actor/parts/ic/ICConfiguration.html",
+    "systems/shadowrun4e/dist/templates/actor-limited/character.html",
+    "systems/shadowrun4e/dist/templates/actor-limited/spirit.html",
+    "systems/shadowrun4e/dist/templates/actor-limited/sprite.html",
+    "systems/shadowrun4e/dist/templates/actor-limited/vehicle.html",
+    "systems/shadowrun4e/dist/templates/actor-limited/critter.html",
+    "systems/shadowrun4e/dist/templates/actor-limited/parts/Header.html",
+    "systems/shadowrun4e/dist/templates/actor-limited/parts/MiscCharacter.html",
+    "systems/shadowrun4e/dist/templates/actor-limited/parts/MiscSpirit.html",
+    "systems/shadowrun4e/dist/templates/actor-limited/parts/MiscSprite.html",
+    "systems/shadowrun4e/dist/templates/actor-limited/parts/MiscVehicle.html",
+    "systems/shadowrun4e/dist/templates/actor-limited/parts/MiscCritter.html",
+    "systems/shadowrun4e/dist/templates/item/parts/description.html",
+    "systems/shadowrun4e/dist/templates/item/parts/technology.html",
+    "systems/shadowrun4e/dist/templates/item/parts/header.html",
+    "systems/shadowrun4e/dist/templates/item/parts/weapon-ammo-list.html",
+    "systems/shadowrun4e/dist/templates/item/parts/weapon-mods-list.html",
+    "systems/shadowrun4e/dist/templates/item/parts/action.html",
+    "systems/shadowrun4e/dist/templates/item/parts/action_results.html",
+    "systems/shadowrun4e/dist/templates/item/parts/modifier.html",
+    "systems/shadowrun4e/dist/templates/item/parts/damage.html",
+    "systems/shadowrun4e/dist/templates/item/parts/opposed.html",
+    "systems/shadowrun4e/dist/templates/item/parts/spell.html",
+    "systems/shadowrun4e/dist/templates/item/parts/complex_form.html",
+    "systems/shadowrun4e/dist/templates/item/parts/weapon.html",
+    "systems/shadowrun4e/dist/templates/item/parts/armor.html",
+    "systems/shadowrun4e/dist/templates/item/parts/matrix.html",
+    "systems/shadowrun4e/dist/templates/item/parts/sin.html",
+    "systems/shadowrun4e/dist/templates/item/parts/contact.html",
+    "systems/shadowrun4e/dist/templates/item/parts/lifestyle.html",
+    "systems/shadowrun4e/dist/templates/item/parts/ammo.html",
+    "systems/shadowrun4e/dist/templates/item/parts/modification.html",
+    "systems/shadowrun4e/dist/templates/item/parts/program.html",
+    "systems/shadowrun4e/dist/templates/item/parts/critter_power.html",
+    "systems/shadowrun4e/dist/templates/rolls/parts/parts-list.html",
+    "systems/shadowrun4e/dist/templates/rolls/parts/Damage.html",
+    "systems/shadowrun4e/dist/templates/common/TabWrapper.html",
+    "systems/shadowrun4e/dist/templates/common/ValueInput.html",
+    "systems/shadowrun4e/dist/templates/common/ValueMaxAttribute.html",
+    "systems/shadowrun4e/dist/templates/common/Attribute.html",
+    "systems/shadowrun4e/dist/templates/common/ValueModifiers.html",
+    "systems/shadowrun4e/dist/templates/common/Select.html",
+    "systems/shadowrun4e/dist/templates/common/HorizontalCellInput.html",
+    "systems/shadowrun4e/dist/templates/common/HeaderBlock.html",
+    "systems/shadowrun4e/dist/templates/common/NameLineBlock.html",
+    "systems/shadowrun4e/dist/templates/common/List/ListItem.html",
+    "systems/shadowrun4e/dist/templates/common/List/ListEntityItem.html",
+    "systems/shadowrun4e/dist/templates/common/List/ListHeader.html",
+    "systems/shadowrun4e/dist/templates/apps/dialogs/damage-application.html",
+    "systems/shadowrun4e/dist/templates/apps/dialogs/parts/success-test-common.html",
+    "systems/shadowrun4e/dist/templates/rolls/success-test-message.html",
+    "systems/shadowrun4e/dist/templates/rolls/parts/rolled-dice.html",
+    "systems/shadowrun4e/dist/templates/rolls/parts/test-opposed-resist.html"
   ];
   return loadTemplates(templatePaths);
 });
@@ -8839,7 +8839,7 @@ var PartsList = class {
 };
 
 // src/module/constants.ts
-var SYSTEM_NAME = "shadowrun5e";
+var SYSTEM_NAME = "shadowrun4e";
 var SYSTEM_SOCKET = `system.${SYSTEM_NAME}`;
 var FLAGS = {
   ShowGlitchAnimation: "showGlitchAnimation",
@@ -9098,7 +9098,7 @@ var DeleteConfirmationDialog = class extends FormDialog {
       },
       default: "cancel",
       templateData: {},
-      templatePath: "systems/shadowrun5e/dist/templates/apps/dialogs/delete-confirmation-dialog.html"
+      templatePath: "systems/shadowrun4e/dist/templates/apps/dialogs/delete-confirmation-dialog.html"
     };
   }
   static get defaultOptions() {
@@ -10367,7 +10367,7 @@ var Helpers = class {
       for (const uuid of testData.targetActorsUuid) {
         const tokenDoc = yield fromUuid(uuid);
         if (!(tokenDoc instanceof TokenDocument)) {
-          console.error(`Shadowrun5e | Been given testData with targets. UUID ${uuid} should point to a TokenDocument but doesn't`, tokenDoc);
+          console.error(`shadowrun4e | Been given testData with targets. UUID ${uuid} should point to a TokenDocument but doesn't`, tokenDoc);
           continue;
         }
         if (!tokenDoc.actor)
@@ -10633,7 +10633,7 @@ var Helpers = class {
       const item = yield pack.getDocument(packEntry._id);
       if (!item || item.type !== "action")
         return;
-      console.info(`Shadowrun5e | Fetched action ${actionName} from pack ${packName}`, item);
+      console.info(`shadowrun4e | Fetched action ${actionName} from pack ${packName}`, item);
       return item;
     });
   }
@@ -11950,7 +11950,7 @@ var TestCreator = {
         action.test = "SuccessTest";
         console.warn(`Shadowrun 5e | An action without a defined test handler defaulted to ${"SuccessTest"}`);
       }
-      if (!game.shadowrun5e.tests.hasOwnProperty(action.test)) {
+      if (!game.shadowrun4e.tests.hasOwnProperty(action.test)) {
         console.error(`Shadowrun 5e | Test registration for test ${action.test} is missing`);
         return;
       }
@@ -11966,7 +11966,7 @@ var TestCreator = {
         action.test = "SuccessTest";
         console.warn(`Shadowrun 5e | An action without a defined test handler defaulted to ${"SuccessTest"}`);
       }
-      if (!game.shadowrun5e.tests.hasOwnProperty(action.test)) {
+      if (!game.shadowrun4e.tests.hasOwnProperty(action.test)) {
         console.error(`Shadowrun 5e | Test registration for test ${action.test} is missing`);
         return;
       }
@@ -12082,11 +12082,11 @@ var TestCreator = {
     });
   },
   _getTestClass: function(testName) {
-    if (!game.shadowrun5e.tests.hasOwnProperty(testName)) {
-      console.error(`Shadowrun 5e | Tried getting a Test Class ${testName}, which isn't registered in: `, game.shadowrun5e.tests);
+    if (!game.shadowrun4e.tests.hasOwnProperty(testName)) {
+      console.error(`Shadowrun 5e | Tried getting a Test Class ${testName}, which isn't registered in: `, game.shadowrun4e.tests);
       return;
     }
-    return game.shadowrun5e.tests[testName];
+    return game.shadowrun4e.tests[testName];
   },
   _getTestDataFromItemAction: function(testCls, item, actor) {
     return __async(this, null, function* () {
@@ -12323,7 +12323,7 @@ var DamageApplicationDialog = class extends FormDialog {
   }
   static getDialogData(actors, damage) {
     const title = game.i18n.localize("SR5.DamageApplication.Title");
-    const templatePath = "systems/shadowrun5e/dist/templates/apps/dialogs/damage-application.html";
+    const templatePath = "systems/shadowrun4e/dist/templates/apps/dialogs/damage-application.html";
     const actorDamage = actors.map((a) => {
       return { actor: a };
     });
@@ -12664,7 +12664,7 @@ var TestDialog = class extends FormDialog {
     html.find(".entity-link").on("click", Helpers.renderEntityLinkSheet);
   }
   get templateContent() {
-    return "systems/shadowrun5e/dist/templates/apps/dialogs/success-test-dialog.html";
+    return "systems/shadowrun4e/dist/templates/apps/dialogs/success-test-dialog.html";
   }
   getData() {
     var _a;
@@ -12959,10 +12959,10 @@ var SuccessTest = class {
     return roll;
   }
   get _dialogTemplate() {
-    return "systems/shadowrun5e/dist/templates/apps/dialogs/success-test-dialog.html";
+    return "systems/shadowrun4e/dist/templates/apps/dialogs/success-test-dialog.html";
   }
   get _chatMessageTemplate() {
-    return "systems/shadowrun5e/dist/templates/rolls/success-test-message.html";
+    return "systems/shadowrun4e/dist/templates/rolls/success-test-message.html";
   }
   _createTestDialog() {
     return new TestDialog({ test: this, templatePath: this._dialogTemplate });
@@ -13359,7 +13359,7 @@ var SuccessTest = class {
   }
   afterTestComplete() {
     return __async(this, null, function* () {
-      console.log(`Shadowrun5e | Test ${this.constructor.name} completed.`, this);
+      console.log(`shadowrun4e | Test ${this.constructor.name} completed.`, this);
       if (this.success) {
         yield this.afterSuccess();
       } else {
@@ -13428,7 +13428,7 @@ var SuccessTest = class {
       var _a, _b, _c, _d;
       if (!game.dice3d || !game.user || !game.users)
         return;
-      console.log("Shadowrun5e | Initiating DiceSoNice throw");
+      console.log("shadowrun4e | Initiating DiceSoNice throw");
       const roll = this.rolls[this.rolls.length - 1];
       let whisper = null;
       if (this._applyGmOnlyContent && this.actor) {
@@ -13701,7 +13701,7 @@ var SuccessTest = class {
       const messageId = element.closest(".chat-message").data("messageId");
       const test = yield TestCreator.fromMessage(messageId);
       if (!test)
-        return console.error(`Shadowrun5e | Couldn't find both a result action ('${resultAction}') and extract test from message ('${messageId}')`);
+        return console.error(`shadowrun4e | Couldn't find both a result action ('${resultAction}') and extract test from message ('${messageId}')`);
       yield test.populateDocuments();
       yield ActionResultFlow.executeResult(resultAction, test);
     });
@@ -13816,7 +13816,7 @@ var DefenseTest = class extends OpposedTest {
     return data;
   }
   get _chatMessageTemplate() {
-    return "systems/shadowrun5e/dist/templates/rolls/defense-test-message.html";
+    return "systems/shadowrun4e/dist/templates/rolls/defense-test-message.html";
   }
   get successLabel() {
     return "SR5.AttackDodged";
@@ -13844,7 +13844,7 @@ var PhysicalDefenseTest = class extends DefenseTest {
     return data;
   }
   get _dialogTemplate() {
-    return "systems/shadowrun5e/dist/templates/apps/dialogs/physical-defense-test-dialog.html";
+    return "systems/shadowrun4e/dist/templates/apps/dialogs/physical-defense-test-dialog.html";
   }
   static _getDefaultTestAction() {
     return DefaultValues.minimalActionData({
@@ -14082,7 +14082,7 @@ var createChatData = (template, templateData) => __async(void 0, null, function*
 function createItemChatMessage(options) {
   return __async(this, null, function* () {
     const templateData = createChatTemplateData(options);
-    return yield createChatMessage("systems/shadowrun5e/dist/templates/rolls/item-card.html", templateData);
+    return yield createChatMessage("systems/shadowrun4e/dist/templates/rolls/item-card.html", templateData);
   });
 }
 function createChatTemplateData(options) {
@@ -14454,7 +14454,7 @@ var SocketMessage = class {
       if (!game.socket)
         return;
       const message = SocketMessage._createMessage(type, data);
-      console.trace("Shadowrun 5e | Emiting Shadowrun5e system socket message", message);
+      console.trace("Shadowrun 5e | Emiting shadowrun4e system socket message", message);
       yield game.socket.emit(SYSTEM_SOCKET, message);
     });
   }
@@ -14468,7 +14468,7 @@ var SocketMessage = class {
       if (!gmUser)
         return console.error("No active GM user! One GM must be active for this action to work.");
       const message = SocketMessage._createMessage(type, data, gmUser.id);
-      console.trace("Shadowrun 5e | Emiting Shadowrun5e system socket message", message);
+      console.trace("Shadowrun 5e | Emiting shadowrun4e system socket message", message);
       yield game.socket.emit(SYSTEM_SOCKET, message);
     });
   }
@@ -14528,7 +14528,7 @@ var NetworkDeviceFlow = class {
   static addDeviceToNetwork(controller, device) {
     return __async(this, null, function* () {
       var _a;
-      console.log(`Shadowrun5e | Adding an the item ${device.name} to the controller ${controller.name}`, controller, device);
+      console.log(`shadowrun4e | Adding an the item ${device.name} to the controller ${controller.name}`, controller, device);
       if (controller.id === device.id)
         return console.warn("Shadowrun 5e | A device cant be its own network controller");
       const technologyData = device.getTechnologyData();
@@ -14671,7 +14671,7 @@ var NetworkDeviceFlow = class {
     controllerData.data.networkDevices.forEach((link) => {
       const device = NetworkDeviceFlow.resolveLink(link);
       if (!device)
-        return console.warn(`Shadowrun5e | Controller ${controller.name} has a network device ${link} that doesn't exist anymore`);
+        return console.warn(`shadowrun4e | Controller ${controller.name} has a network device ${link} that doesn't exist anymore`);
       devices.push(device);
     });
     return devices;
@@ -15229,7 +15229,7 @@ var _SR5Item = class extends Item {
   }
   rollOpposedTest(target, attack, event) {
     return __async(this, null, function* () {
-      console.error(`Shadowrun5e | ${this.constructor.name}.rollOpposedTest is not supported anymore`);
+      console.error(`shadowrun4e | ${this.constructor.name}.rollOpposedTest is not supported anymore`);
     });
   }
   rollTestType(type, attack, event, target) {
@@ -15377,7 +15377,7 @@ var _SR5Item = class extends Item {
         return;
       const idx = items.findIndex((i) => i._id === deleted || Number(i._id) === deleted);
       if (idx === -1)
-        throw new Error(`Shadowrun5e | Couldn't find owned item ${deleted}`);
+        throw new Error(`shadowrun4e | Couldn't find owned item ${deleted}`);
       items.splice(idx, 1);
       yield this.clearNestedItems();
       yield this.setNestedItems(items);
@@ -17372,7 +17372,7 @@ var ModifierFlow = class {
 // src/module/tests/AttributeOnlyTest.ts
 var AttributeOnlyTest = class extends SuccessTest {
   get _dialogTemplate() {
-    return "systems/shadowrun5e/dist/templates/apps/dialogs/attribute-only-test-dialog.html";
+    return "systems/shadowrun4e/dist/templates/apps/dialogs/attribute-only-test-dialog.html";
   }
   _prepareData(data, options) {
     data = super._prepareData(data, options);
@@ -17467,7 +17467,7 @@ var _SR5Actor = class extends Actor {
     try {
       super.applyActiveEffects();
     } catch (error) {
-      console.error(`Shadowrun5e | Some effect changes could not be applied and might cause issues. Check effects of actor (${this.name}) / id (${this.id})`);
+      console.error(`shadowrun4e | Some effect changes could not be applied and might cause issues. Check effects of actor (${this.name}) / id (${this.id})`);
       console.error(error);
       (_a = ui.notifications) == null ? void 0 : _a.error(`See browser console (F12): Some effect changes could not be applied and might cause issues. Check effects of actor (${this.name}) / id (${this.id})`);
     }
@@ -17817,7 +17817,7 @@ var _SR5Actor = class extends Actor {
   addKnowledgeSkill(category, skill) {
     return __async(this, null, function* () {
       if (!this.system.skills.knowledge.hasOwnProperty(category)) {
-        console.error(`Shadowrun5e | Tried creating knowledge skill with unkown category ${category}`);
+        console.error(`shadowrun4e | Tried creating knowledge skill with unkown category ${category}`);
         return;
       }
       const defaultSkill = {
@@ -17979,7 +17979,7 @@ var _SR5Actor = class extends Actor {
   }
   rollSkill(_0) {
     return __async(this, arguments, function* (skillId, options = {}) {
-      console.info(`Shadowrun5e | Rolling skill test for ${skillId}`);
+      console.info(`shadowrun4e | Rolling skill test for ${skillId}`);
       const action = this.skillActionData(skillId, options);
       if (!action)
         return;
@@ -18020,7 +18020,7 @@ var _SR5Actor = class extends Actor {
   }
   rollAttribute(name, options) {
     return __async(this, null, function* () {
-      console.info(`Shadowrun5e | Rolling attribute ${name} test from ${this.constructor.name}`);
+      console.info(`shadowrun4e | Rolling attribute ${name} test from ${this.constructor.name}`);
       const action = DefaultValues.actionData({ attribute: name, test: AttributeOnlyTest.name });
       const test = yield TestCreator.fromAction(action, this);
       if (!test)
@@ -18210,7 +18210,7 @@ var _SR5Actor = class extends Actor {
   healDamage(track, healing) {
     return __async(this, null, function* () {
       var _a;
-      console.log(`Shadowrun5e | Healing ${track} damage of ${healing} for actor`, this);
+      console.log(`shadowrun4e | Healing ${track} damage of ${healing} for actor`, this);
       if (!((_a = this.system) == null ? void 0 : _a.track.hasOwnProperty(track)))
         return;
       const current = Math.max(this.system.track[track].value - healing, 0);
@@ -19051,7 +19051,7 @@ var _VersionMigration = class {
   }
 };
 var VersionMigration = _VersionMigration;
-VersionMigration.MODULE_NAME = "shadowrun5e";
+VersionMigration.MODULE_NAME = "shadowrun4e";
 VersionMigration.KEY_DATA_VERSION = "systemMigrationVersion";
 VersionMigration.NO_VERSION = "0";
 
@@ -19114,7 +19114,7 @@ var _Migrator = class {
     return ((_a = game.actors) == null ? void 0 : _a.contents.length) === 0 && ((_b = game.items) == null ? void 0 : _b.contents.length) === 0 && ((_c = game.scenes) == null ? void 0 : _c.contents.length) === 0 && _Migrator.onlySystemPacks;
   }
   static get onlySystemPacks() {
-    return game.packs.contents.filter((pack) => pack.metadata.packageType !== "system" && pack.metadata.packageName !== "shadowrun5e").length === 0;
+    return game.packs.contents.filter((pack) => pack.metadata.packageType !== "system" && pack.metadata.packageName !== "shadowrun4e").length === 0;
   }
   static InitWorldForMigration() {
     return __async(this, null, function* () {
@@ -19398,7 +19398,7 @@ var SR5ItemSheet = class extends ItemSheet {
     });
   }
   get template() {
-    const path = "systems/shadowrun5e/dist/templates/item/";
+    const path = "systems/shadowrun4e/dist/templates/item/";
     return `${path}${this.item.data.type}.html`;
   }
   getData(options) {
@@ -19469,10 +19469,10 @@ var SR5ItemSheet = class extends ItemSheet {
       if (this.item.canBeNetworkDevice) {
         data["networkController"] = this.item.networkController;
       }
-      data.tests = game.shadowrun5e.tests;
-      data.opposedTests = game.shadowrun5e.opposedTests;
-      data.activeTests = game.shadowrun5e.activeTests;
-      data.resistTests = game.shadowrun5e.resistTests;
+      data.tests = game.shadowrun4e.tests;
+      data.opposedTests = game.shadowrun4e.opposedTests;
+      data.activeTests = game.shadowrun4e.activeTests;
+      data.resistTests = game.shadowrun4e.resistTests;
       data.descriptionHTML = yield TextEditor.enrichHTML(this.item.system.description.value, {
         async: true
       });
@@ -19872,7 +19872,7 @@ function createItemMacro(item, slot) {
     var _a;
     if (!game || !game.macros)
       return;
-    const command = `game.shadowrun5e.rollItemMacro("${item.name}");`;
+    const command = `game.shadowrun4e.rollItemMacro("${item.name}");`;
     let macro = game.macros.contents.find((m) => m.name === item.name);
     if (!macro) {
       macro = yield Macro.create({
@@ -19880,7 +19880,7 @@ function createItemMacro(item, slot) {
         type: "script",
         img: item.img,
         command,
-        flags: { "shadowrun5e.itemMacro": true }
+        flags: { "shadowrun4e.itemMacro": true }
       }, { renderSheet: false });
     }
     if (macro)
@@ -19914,7 +19914,7 @@ function createSkillMacro(data, slot) {
     const existingMacro = game.macros.contents.find((macro2) => macro2.name === name);
     if (existingMacro)
       return;
-    const command = `game.shadowrun5e.rollSkillMacro("${name}");`;
+    const command = `game.shadowrun4e.rollSkillMacro("${name}");`;
     const macro = yield Macro.create({
       name,
       type: "script",
@@ -19947,7 +19947,7 @@ var _OverwatchScoreTracker = class extends Application {
     options.id = "overwatch-score-tracker";
     options.classes = ["sr5"];
     options.title = game.i18n.localize("SR5.OverwatchScoreTrackerTitle");
-    options.template = "systems/shadowrun5e/dist/templates/apps/gmtools/overwatch-score-tracker.html";
+    options.template = "systems/shadowrun4e/dist/templates/apps/gmtools/overwatch-score-tracker.html";
     options.width = 450;
     options.height = "auto";
     options.resizable = true;
@@ -20285,7 +20285,7 @@ var SR5Combat = class extends Combat {
     });
   }
   static onPreUpdateCombatant(combatant, changed, options, id) {
-    console.log("Shadowrun5e | Handle preUpdateCombatant to apply system rules", combatant, changed);
+    console.log("shadowrun4e | Handle preUpdateCombatant to apply system rules", combatant, changed);
     if (changed.initiative)
       changed.initiative = CombatRules.getValidInitiativeScore(changed.initiative);
   }
@@ -22216,7 +22216,7 @@ var _Import = class extends Application {
     options.id = "chummer-data-import";
     options.classes = ["app", "window-app", "filepicker"];
     options.title = "Chummer/Data Import";
-    options.template = "systems/shadowrun5e/dist/templates/apps/compendium-import.html";
+    options.template = "systems/shadowrun4e/dist/templates/apps/compendium-import.html";
     options.width = 600;
     options.height = "auto";
     return options;
@@ -22346,11 +22346,11 @@ Import.Importers = [
 // src/module/apps/ChangelogApplication.ts
 var ChangelogApplication = class extends Application {
   get template() {
-    return "systems/shadowrun5e/dist/templates/apps/changelog.html";
+    return "systems/shadowrun4e/dist/templates/apps/changelog.html";
   }
   static get defaultOptions() {
     const options = super.defaultOptions;
-    options.classes = ["shadowrun5e"];
+    options.classes = ["shadowrun4e"];
     options.title = game.i18n.localize("SR5.ChangelogApplication.Title");
     options.width = 500;
     options.height = "auto";
@@ -22380,7 +22380,7 @@ var EnvModifiersApplication = class extends Application {
     this.target = target;
   }
   get template() {
-    return "systems/shadowrun5e/dist/templates/apps/env-modifiers.html";
+    return "systems/shadowrun4e/dist/templates/apps/env-modifiers.html";
   }
   static get defaultOptions() {
     const options = super.defaultOptions;
@@ -23500,15 +23500,15 @@ var quenchRegister = (quench) => {
   if (!quench)
     return;
   console.warn("Shadowrun 5e | Be aware that FoundryVTT will tank in update performance when a lot of documents are in collections. This is the case if you have all Chummer items imported and might cause tests to cross the 2000ms quench timeout threshold. Clear those collections in a test world. :)");
-  quench.registerBatch("shadowrun5e.rules.matrix", shadowrunMatrix, { displayName: "SHADOWRUN5e: Matrix Test" });
-  quench.registerBatch("shadowrun5e.rules.modifiers", shadowrunRulesModifiers, { displayName: "SHADOWRUN5e: Modifiers Test" });
-  quench.registerBatch("shadowrun5e.entities.items", shadowrunSR5Item, { displayName: "SHADOWRUN5e: SR5Item Test" });
-  quench.registerBatch("shadowrun5e.entities.actors", shadowrunSR5Actor, { displayName: "SHADOWRUN5e: SR5Actor Test" });
-  quench.registerBatch("shadowrun5e.entities.effects", shadowrunSR5ActiveEffect, { displayName: "SHADOWRUN5e: SR5ActiveEffect Test" });
-  quench.registerBatch("shadowrun5e.data_prep.actor", shadowrunSR5ActorDataPrep, { displayName: "SHADOWRUN5e: SR5ActorDataPreparation Test" });
-  quench.registerBatch("shadowrun5e.flow.networkDevices", shadowrunNetworkDevices, { displayName: "SHADOWRUN5e: Matrix Network Devices Test" });
-  quench.registerBatch("shadowrun5e.flow.inventory", shadowrunInventoryFlow, { displayName: "SHADOWRUN5e: InventoryFlow Test" });
-  quench.registerBatch("shadowrun5e.flow.tests", shadowrunTesting, { displayName: "SHADOWRUN5e: SuccessTest Test" });
+  quench.registerBatch("shadowrun4e.rules.matrix", shadowrunMatrix, { displayName: "shadowrun4e: Matrix Test" });
+  quench.registerBatch("shadowrun4e.rules.modifiers", shadowrunRulesModifiers, { displayName: "shadowrun4e: Modifiers Test" });
+  quench.registerBatch("shadowrun4e.entities.items", shadowrunSR5Item, { displayName: "shadowrun4e: SR5Item Test" });
+  quench.registerBatch("shadowrun4e.entities.actors", shadowrunSR5Actor, { displayName: "shadowrun4e: SR5Actor Test" });
+  quench.registerBatch("shadowrun4e.entities.effects", shadowrunSR5ActiveEffect, { displayName: "shadowrun4e: SR5ActiveEffect Test" });
+  quench.registerBatch("shadowrun4e.data_prep.actor", shadowrunSR5ActorDataPrep, { displayName: "shadowrun4e: SR5ActorDataPreparation Test" });
+  quench.registerBatch("shadowrun4e.flow.networkDevices", shadowrunNetworkDevices, { displayName: "shadowrun4e: Matrix Network Devices Test" });
+  quench.registerBatch("shadowrun4e.flow.inventory", shadowrunInventoryFlow, { displayName: "shadowrun4e: InventoryFlow Test" });
+  quench.registerBatch("shadowrun4e.flow.tests", shadowrunTesting, { displayName: "shadowrun4e: SuccessTest Test" });
 };
 
 // src/module/apps/skills/SkillEditSheet.ts
@@ -23528,7 +23528,7 @@ var SkillEditSheet = class extends DocumentSheet {
     return mergeObject(options, {
       id: "skill-editor",
       classes: ["sr5", "sheet", "skill-edit-window"],
-      template: "systems/shadowrun5e/dist/templates/apps/skill-edit.html",
+      template: "systems/shadowrun4e/dist/templates/apps/skill-edit.html",
       width: 300,
       height: "auto",
       submitOnClose: true,
@@ -23735,7 +23735,7 @@ var MoveInventoryDialog = class extends FormDialog {
       },
       default: "cancel",
       templateData: { inventories },
-      templatePath: "systems/shadowrun5e/dist/templates/apps/dialogs/move-inventory-dialog.html",
+      templatePath: "systems/shadowrun4e/dist/templates/apps/dialogs/move-inventory-dialog.html",
       onAfterClose: (html) => __async(this, null, function* () {
         return html.find('input[name="inventories"]:checked').val();
       })
@@ -24764,9 +24764,9 @@ var ChummerImportForm = class extends FormApplication {
   static get defaultOptions() {
     const options = super.defaultOptions;
     options.id = "chummer-import";
-    options.classes = ["shadowrun5e"];
+    options.classes = ["shadowrun4e"];
     options.title = "Chummer/Hero Lab Import";
-    options.template = "systems/shadowrun5e/dist/templates/apps/import.html";
+    options.template = "systems/shadowrun4e/dist/templates/apps/import.html";
     options.width = 600;
     options.height = "auto";
     return options;
@@ -24865,7 +24865,7 @@ var SR5BaseActorSheet = class extends ActorSheet {
     });
   }
   get template() {
-    const path = "systems/shadowrun5e/dist/templates";
+    const path = "systems/shadowrun4e/dist/templates";
     if (this.actor.limited) {
       return `${path}/actor-limited/${this.actor.data.type}.html`;
     }
@@ -25298,7 +25298,7 @@ var SR5BaseActorSheet = class extends ActorSheet {
       this._addInventoryTypes(inventories[name]);
       itemIds.forEach((id) => {
         if (itemIdInventory[id])
-          console.warn(`Shadowrun5e | Item id ${id} has been added to both ${name} and ${itemIdInventory[id]}. Will only show in ${name}`);
+          console.warn(`shadowrun4e | Item id ${id} has been added to both ${name} and ${itemIdInventory[id]}. Will only show in ${name}`);
         itemIdInventory[id] = name;
       });
     });
@@ -25534,7 +25534,7 @@ var SR5BaseActorSheet = class extends ActorSheet {
       this._delays.skills = setTimeout(() => {
         this._filters.skills = event.currentTarget.value;
         this.render();
-      }, game.shadowrun5e.inputDelay);
+      }, game.shadowrun4e.inputDelay);
     });
   }
   _onRollSkill(event) {
@@ -26039,7 +26039,7 @@ SR5ActiveEffect.LOG_V10_COMPATIBILITY_WARNINGS = false;
 // src/module/effect/SR5ActiveEffectConfig.ts
 var SR5ActiveEffectConfig = class extends ActiveEffectConfig {
   get template() {
-    return "systems/shadowrun5e/dist/templates/effect/active-effect-config.html";
+    return "systems/shadowrun4e/dist/templates/effect/active-effect-config.html";
   }
   getData(options) {
     const data = super.getData(options);
@@ -26317,7 +26317,7 @@ var RangedAttackTest = class extends SuccessTest {
     });
   }
   get _dialogTemplate() {
-    return "systems/shadowrun5e/dist/templates/apps/dialogs/ranged-attack-test-dialog.html";
+    return "systems/shadowrun4e/dist/templates/apps/dialogs/ranged-attack-test-dialog.html";
   }
   get _opposedTestClass() {
     if (this.data.fireMode.suppression)
@@ -26484,7 +26484,7 @@ var ShadowrunActorDialogs = class {
       }
       return { cover, special, parts, combat };
     };
-    const templatePath = "systems/shadowrun5e/dist/templates/rolls/roll-defense.html";
+    const templatePath = "systems/shadowrun4e/dist/templates/rolls/roll-defense.html";
     const templateData = {
       parts: parts.getMessageOutput(),
       cover: options.cover,
@@ -26500,7 +26500,7 @@ var ShadowrunActorDialogs = class {
   }
   static getSoakDialogData(soakRollOptions, soakParts) {
     const title = game.i18n.localize("SR5.DamageResistanceTest");
-    const templatePath = "systems/shadowrun5e/dist/templates/rolls/roll-soak.html";
+    const templatePath = "systems/shadowrun4e/dist/templates/rolls/roll-soak.html";
     const templateData = {
       damage: soakRollOptions == null ? void 0 : soakRollOptions.damage,
       parts: soakParts.getMessageOutput(),
@@ -26532,7 +26532,7 @@ var ShadowrunActorDialogs = class {
   static getSkillDialogData(actor, options, partsProps) {
     var _a;
     const title = game.i18n.localize(options.skill.label || options.skill.name);
-    const templatePath = "systems/shadowrun5e/dist/templates/rolls/skill-roll.html";
+    const templatePath = "systems/shadowrun4e/dist/templates/rolls/skill-roll.html";
     const attributes = actor.getAttributes();
     const attribute = actor.getAttribute(options.attribute ? options.attribute : options.skill.attribute);
     const limits = actor.getLimits();
@@ -26601,7 +26601,7 @@ var SoakFlow = class {
     const limit = actor.getLimit("physical");
     const effectiveLimit = limit.value + gelRoundsEffect + impactDispersionEffect;
     const knockedDown = damage.value > effectiveLimit || damage.value >= 10;
-    console.log(`Shadowrun5e | Determined target ${actor.id} knocked down status as: ${knockedDown}`, damage, actor);
+    console.log(`shadowrun4e | Determined target ${actor.id} knocked down status as: ${knockedDown}`, damage, actor);
     return knockedDown;
   }
   isDamageFromGelRounds(damage) {
@@ -26674,10 +26674,10 @@ var PhysicalResistTest = class extends SuccessTest {
     return data;
   }
   get _chatMessageTemplate() {
-    return "systems/shadowrun5e/dist/templates/rolls/defense-test-message.html";
+    return "systems/shadowrun4e/dist/templates/rolls/defense-test-message.html";
   }
   get _dialogTemplate() {
-    return "systems/shadowrun5e/dist/templates/apps/dialogs/physical-resist-test-dialog.html";
+    return "systems/shadowrun4e/dist/templates/apps/dialogs/physical-resist-test-dialog.html";
   }
   get canBeExtended() {
     return false;
@@ -26754,7 +26754,7 @@ var MeleeAttackTest = class extends SuccessTest {
     return ["global", "wounds", "environmental"];
   }
   get _dialogTemplate() {
-    return "systems/shadowrun5e/dist/templates/apps/dialogs/melee-attack-test-dialog.html";
+    return "systems/shadowrun4e/dist/templates/apps/dialogs/melee-attack-test-dialog.html";
   }
   prepareDocumentData() {
     return __async(this, null, function* () {
@@ -26830,10 +26830,10 @@ var SpellCastingTest = class extends SuccessTest {
     return data;
   }
   get _dialogTemplate() {
-    return "systems/shadowrun5e/dist/templates/apps/dialogs/spellcasting-test-dialog.html";
+    return "systems/shadowrun4e/dist/templates/apps/dialogs/spellcasting-test-dialog.html";
   }
   get _chatMessageTemplate() {
-    return "systems/shadowrun5e/dist/templates/rolls/spellcasting-test-message.html";
+    return "systems/shadowrun4e/dist/templates/rolls/spellcasting-test-message.html";
   }
   get canBeExtended() {
     return false;
@@ -26912,10 +26912,10 @@ var DrainTest = class extends SuccessTest {
     return data;
   }
   get _dialogTemplate() {
-    return "systems/shadowrun5e/dist/templates/apps/dialogs/drain-test-dialog.html";
+    return "systems/shadowrun4e/dist/templates/apps/dialogs/drain-test-dialog.html";
   }
   get _chatMessageTemplate() {
-    return "systems/shadowrun5e/dist/templates/rolls/drain-test-message.html";
+    return "systems/shadowrun4e/dist/templates/rolls/drain-test-message.html";
   }
   static _getDefaultTestAction() {
     return {
@@ -27010,7 +27010,7 @@ var CombatSpellRules = class {
   }
   static defenseTestAction(spellType, combatType) {
     if (spellType === "" || combatType === "")
-      console.warn(`Shadowrun5e | The given spell or combat spell types are empty and won't form a complete defense test action`);
+      console.warn(`shadowrun4e | The given spell or combat spell types are empty and won't form a complete defense test action`);
     const itemAction = DefaultValues.minimalActionData();
     if (spellType === "mana" && combatType === "direct") {
       itemAction.attribute = "willpower";
@@ -27155,10 +27155,10 @@ var ComplexFormTest = class extends SuccessTest {
     return data;
   }
   get _dialogTemplate() {
-    return "systems/shadowrun5e/dist/templates/apps/dialogs/complexform-test-dialog.html";
+    return "systems/shadowrun4e/dist/templates/apps/dialogs/complexform-test-dialog.html";
   }
   get _chatMessageTemplate() {
-    return "systems/shadowrun5e/dist/templates/rolls/complexform-test-message.html";
+    return "systems/shadowrun4e/dist/templates/rolls/complexform-test-message.html";
   }
   get canBeExtended() {
     return false;
@@ -27313,10 +27313,10 @@ var FadeTest = class extends SuccessTest {
     return data;
   }
   get _dialogTemplate() {
-    return "systems/shadowrun5e/dist/templates/apps/dialogs/fade-test-dialog.html";
+    return "systems/shadowrun4e/dist/templates/apps/dialogs/fade-test-dialog.html";
   }
   get _chatMessageTemplate() {
-    return "systems/shadowrun5e/dist/templates/rolls/fade-test-message.html";
+    return "systems/shadowrun4e/dist/templates/rolls/fade-test-message.html";
   }
   static _getDefaultTestAction() {
     return {
@@ -27484,7 +27484,7 @@ ___________________
 \\____/\\_| \\_\\____/ 
 ===================
 `);
-    game["shadowrun5e"] = {
+    game["shadowrun4e"] = {
       SR5Actor,
       SR5Item,
       SR5ActiveEffect,
@@ -27660,7 +27660,7 @@ ___________________
     tokenControls.tools.push(EnvModifiersApplication.getControl());
   }
   static renderChatMessage() {
-    console.debug("Shadowrun5e | Registering new chat messages related hooks");
+    console.debug("shadowrun4e | Registering new chat messages related hooks");
   }
   static renderItemDirectory(app, html) {
     const button = $('<button class="sr5 flex0">Import Chummer Data</button>');
@@ -27700,7 +27700,7 @@ ___________________
   static registerSocketListeners() {
     if (!game.socket || !game.user)
       return;
-    console.log("Registering Shadowrun5e system socket messages...");
+    console.log("Registering shadowrun4e system socket messages...");
     const hooks = {
       [FLAGS.addNetworkController]: [NetworkDeviceFlow._handleAddNetworkControllerSocketMessage],
       [FLAGS.DoNextRound]: [SR5Combat._handleDoNextRoundSocketMessage],
@@ -27732,7 +27732,7 @@ ___________________
     console.log("Shadowrun 5e | Registering support for autocomplete-inline-properties");
     const DATA_MODE = api.CONST.DATA_MODE;
     const config = {
-      packageName: "shadowrun5e",
+      packageName: "shadowrun4e",
       sheetClasses: [{
         name: "ActiveEffectConfig",
         fieldConfigs: [

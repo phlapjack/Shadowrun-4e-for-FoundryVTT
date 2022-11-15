@@ -12,7 +12,7 @@ import {SR5Actor} from "./actor/SR5Actor";
 export async function createItemMacro(item, slot) {
     if (!game || !game.macros) return;
 
-    const command = `game.shadowrun5e.rollItemMacro("${item.name}");`;
+    const command = `game.shadowrun4e.rollItemMacro("${item.name}");`;
     let macro = game.macros.contents.find((m) => m.name === item.name);
     if (!macro) {
         macro = await Macro.create(
@@ -21,7 +21,7 @@ export async function createItemMacro(item, slot) {
                 type: 'script',
                 img: item.img,
                 command: command,
-                flags: { 'shadowrun5e.itemMacro': true },
+                flags: { 'shadowrun4e.itemMacro': true },
             },
             { renderSheet: false },
         );
@@ -70,7 +70,7 @@ export async function createSkillMacro(data: {skillId: string, skill: SkillField
     if (existingMacro) return;
 
     // Setup macro data.
-    const command = `game.shadowrun5e.rollSkillMacro("${name}");`;
+    const command = `game.shadowrun4e.rollSkillMacro("${name}");`;
     const macro = await Macro.create({
         name,
         type: 'script',

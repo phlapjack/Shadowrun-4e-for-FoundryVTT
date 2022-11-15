@@ -29,11 +29,11 @@ export class DrainTest extends SuccessTest {
     }
 
     get _dialogTemplate(): string {
-        return 'systems/shadowrun5e/dist/templates/apps/dialogs/drain-test-dialog.html';
+        return 'systems/shadowrun4e/dist/templates/apps/dialogs/drain-test-dialog.html';
     }
 
     get _chatMessageTemplate(): string {
-        return 'systems/shadowrun5e/dist/templates/rolls/drain-test-message.html';
+        return 'systems/shadowrun4e/dist/templates/rolls/drain-test-message.html';
     }
 
     static _getDefaultTestAction(): Partial<MinimalActionData> {

@@ -66,7 +66,7 @@ export class ShadowrunItemDialog {
                             event,
         } as unknown as Dialog.Data;
 
-        const templatePath = 'systems/shadowrun5e/dist/templates/rolls/range-weapon-roll.html';
+        const templatePath = 'systems/shadowrun4e/dist/templates/rolls/range-weapon-roll.html';
 
         // Prepare template data for display.
         const modifiers = await item.actor.getModifiers();
@@ -94,7 +94,7 @@ export class ShadowrunItemDialog {
                             event,
         } as unknown as Dialog.Data;
 
-        const templatePath = 'systems/shadowrun5e/dist/templates/rolls/roll-spell.html';
+        const templatePath = 'systems/shadowrun4e/dist/templates/rolls/roll-spell.html';
         const templateData = {};
         const onAfterClose = ShadowrunItemDialog.addSpellData(templateData, dialogData, item);
 
@@ -111,7 +111,7 @@ export class ShadowrunItemDialog {
                             event,
         } as unknown as Dialog.Data;
 
-        const templatePath = 'systems/shadowrun5e/dist/templates/rolls/roll-complex-form.html';
+        const templatePath = 'systems/shadowrun4e/dist/templates/rolls/roll-complex-form.html';
         const templateData = {};
         const onAfterClose = ShadowrunItemDialog.addComplexFormData(templateData, dialogData, item);
 
@@ -127,7 +127,7 @@ export class ShadowrunItemDialog {
         const dialogData = {title: item.name,
                             event} as unknown as Dialog.Data;
 
-        const templatePath = 'systems/shadowrun5e/dist/templates/rolls/roll-matrix.html';
+        const templatePath = 'systems/shadowrun4e/dist/templates/rolls/roll-matrix.html';
         const templateData = {};
         const onAfterClose = ShadowrunItemDialog.addMatrixActionData(templateData, dialogData, item);
 

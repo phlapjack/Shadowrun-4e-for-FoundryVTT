@@ -28,7 +28,7 @@ export class MeleeAttackTest extends SuccessTest {
     }
 
      get _dialogTemplate(): string {
-        return 'systems/shadowrun5e/dist/templates/apps/dialogs/melee-attack-test-dialog.html';
+        return 'systems/shadowrun4e/dist/templates/apps/dialogs/melee-attack-test-dialog.html';
     }
 
     async prepareDocumentData() {

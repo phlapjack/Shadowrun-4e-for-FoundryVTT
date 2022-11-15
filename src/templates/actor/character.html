@@ -1,17 +1,17 @@
 <form class="{{cssClass}} wholesheet" autocomplete="off">
     <header class="flexrow">
-        {{> 'systems/shadowrun5e/dist/templates/actor/parts/ProfileImage.html'
+        {{> 'systems/shadowrun4e/dist/templates/actor/parts/ProfileImage.html'
             height='90px'
             width='90px'
         }}
         <div class="flexcol flex-end border-right">
             <div class="block">
-                {{> 'systems/shadowrun5e/dist/templates/actor/parts/NameInput.html' }}
+                {{> 'systems/shadowrun4e/dist/templates/actor/parts/NameInput.html' }}
             </div>
             <div class="attributes smooth">
                 <div class="block">
                     {{#each system.track as |track id|}}
-                        {{> 'systems/shadowrun5e/dist/templates/common/HorizontalCellInput.html'
+                        {{> 'systems/shadowrun4e/dist/templates/common/HorizontalCellInput.html'
                                 name=(localize track.label)
                                 value=track.value
                                 max=track.max
@@ -21,7 +21,7 @@
                         }}
                         {{#if track.overflow}}
                             {{#ife track.value track.max}}
-                                {{> 'systems/shadowrun5e/dist/templates/common/HorizontalCellInput.html'
+                                {{> 'systems/shadowrun4e/dist/templates/common/HorizontalCellInput.html'
                                         name=(localize "SR5.Overflow")
                                         value=track.overflow.value
                                         max=track.overflow.max
@@ -35,12 +35,12 @@
         </div>
         <div class="flexcol flex-end">
             <div class="attributes center">
-                {{> 'systems/shadowrun5e/dist/templates/actor/parts/Movement.html' }}
-                {{> 'systems/shadowrun5e/dist/templates/actor/parts/Initiative.html' }}
+                {{> 'systems/shadowrun4e/dist/templates/actor/parts/Movement.html' }}
+                {{> 'systems/shadowrun4e/dist/templates/actor/parts/Initiative.html' }}
             </div>
             <div class="attributes">
                 <div class="attribute">
-                    {{> 'systems/shadowrun5e/dist/templates/common/HorizontalCellInput.html'
+                    {{> 'systems/shadowrun4e/dist/templates/common/HorizontalCellInput.html'
                             name=(localize "SR5.AttrEdge")
                             value=system.attributes.edge.uses
                             max=system.attributes.edge.value
@@ -109,15 +109,15 @@
         <a class="item" data-tab="misc">{{localize "SR5.Miscellaneous"}}</a>
     </nav>
     <section class="sheetbody">
-        {{> "systems/shadowrun5e/dist/templates/actor/tabs/ActionsTab.html"}}
-        {{> "systems/shadowrun5e/dist/templates/actor/tabs/SkillsTab.html"}}
-        {{> "systems/shadowrun5e/dist/templates/actor/tabs/MatrixTab.html"}}
-        {{> "systems/shadowrun5e/dist/templates/actor/tabs/InventoryTab.html"}}
-        {{> "systems/shadowrun5e/dist/templates/actor/tabs/MagicTab.html"}}
-        {{> "systems/shadowrun5e/dist/templates/actor/tabs/CritterPowersTab.html"}}
-        {{> "systems/shadowrun5e/dist/templates/actor/tabs/BioTab.html"}}
-        {{> "systems/shadowrun5e/dist/templates/actor/tabs/SocialTab.html"}}
-        {{> "systems/shadowrun5e/dist/templates/actor/tabs/EffectsTab.html"}}
-        {{> "systems/shadowrun5e/dist/templates/actor/tabs/MiscTab.html"}}
+        {{> "systems/shadowrun4e/dist/templates/actor/tabs/ActionsTab.html"}}
+        {{> "systems/shadowrun4e/dist/templates/actor/tabs/SkillsTab.html"}}
+        {{> "systems/shadowrun4e/dist/templates/actor/tabs/MatrixTab.html"}}
+        {{> "systems/shadowrun4e/dist/templates/actor/tabs/InventoryTab.html"}}
+        {{> "systems/shadowrun4e/dist/templates/actor/tabs/MagicTab.html"}}
+        {{> "systems/shadowrun4e/dist/templates/actor/tabs/CritterPowersTab.html"}}
+        {{> "systems/shadowrun4e/dist/templates/actor/tabs/BioTab.html"}}
+        {{> "systems/shadowrun4e/dist/templates/actor/tabs/SocialTab.html"}}
+        {{> "systems/shadowrun4e/dist/templates/actor/tabs/EffectsTab.html"}}
+        {{> "systems/shadowrun4e/dist/templates/actor/tabs/MiscTab.html"}}
     </section>
 </form>

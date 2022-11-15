@@ -1,18 +1,18 @@
-{{#> 'systems/shadowrun5e/dist/templates/common/TabWrapper.html' tabId='skills'}}
+{{#> 'systems/shadowrun4e/dist/templates/common/TabWrapper.html' tabId='skills'}}
     <div>
-        {{> "systems/shadowrun5e/dist/templates/common/HeaderBlock.html"
+        {{> "systems/shadowrun4e/dist/templates/common/HeaderBlock.html"
                 name=(localize "SR5.Labels.ActorSheet.Matrix")
         }}
         <div class="attributes">
             {{#each config.matrixAttributes as |label key|}}
-                {{> "systems/shadowrun5e/dist/templates/actor/parts/matrix/MatrixAttribute.html"
+                {{> "systems/shadowrun4e/dist/templates/actor/parts/matrix/MatrixAttribute.html"
                         matrixAtt=(lookup ../system.matrix key)
                         key=key
                         label=label
                         matrixAttributes=../config/matrixAttributes
                 }}
             {{/each}}
-            {{> "systems/shadowrun5e/dist/templates/actor/parts/attributes/Attribute.html"
+            {{> "systems/shadowrun4e/dist/templates/actor/parts/attributes/Attribute.html"
                     attributeId='resonance'
                     attribute=system.attributes.resonance
             }}
@@ -41,7 +41,7 @@
                     </div>
                     <div class="item-right">
                         <div class="item-text">
-                            {{> 'systems/shadowrun5e/dist/templates/common/ValueInput.html'
+                            {{> 'systems/shadowrun4e/dist/templates/common/ValueInput.html'
                                     cssClass="attribute-input"
                                     size="2"
                                     maxLength="2"
@@ -69,8 +69,8 @@
     </div>
     <div class="inventory">
         <div class="split-container">
-            {{> 'systems/shadowrun5e/dist/templates/actor/parts/skills/ActiveSkillList.html' }}
-            {{> 'systems/shadowrun5e/dist/templates/actor/parts/matrix/Marks.html' }}
+            {{> 'systems/shadowrun4e/dist/templates/actor/parts/skills/ActiveSkillList.html' }}
+            {{> 'systems/shadowrun4e/dist/templates/actor/parts/matrix/Marks.html' }}
         </div>
     </div>
-{{/ 'systems/shadowrun5e/dist/templates/common/TabWrapper.html'}}
+{{/ 'systems/shadowrun4e/dist/templates/common/TabWrapper.html'}}

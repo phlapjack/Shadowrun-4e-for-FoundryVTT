@@ -36,7 +36,7 @@ export class PhysicalDefenseTest extends DefenseTest {
     }
 
     get _dialogTemplate(): string {
-        return 'systems/shadowrun5e/dist/templates/apps/dialogs/physical-defense-test-dialog.html';
+        return 'systems/shadowrun4e/dist/templates/apps/dialogs/physical-defense-test-dialog.html';
     }
 
     static _getDefaultTestAction() {

@@ -166,7 +166,7 @@ export class SR5BaseActorSheet extends ActorSheet {
      * @override
      */
     get template() {
-        const path = 'systems/shadowrun5e/dist/templates';
+        const path = 'systems/shadowrun4e/dist/templates';
 
         if (this.actor.limited) {
             return `${path}/actor-limited/${this.actor.data.type}.html`;
@@ -786,7 +786,7 @@ export class SR5BaseActorSheet extends ActorSheet {
             this._addInventoryTypes(inventories[name]);
 
             itemIds.forEach(id => {
-                if (itemIdInventory[id]) console.warn(`Shadowrun5e | Item id ${id} has been added to both ${name} and ${itemIdInventory[id]}. Will only show in ${name}`);
+                if (itemIdInventory[id]) console.warn(`shadowrun4e | Item id ${id} has been added to both ${name} and ${itemIdInventory[id]}. Will only show in ${name}`);
                 itemIdInventory[id] = name;
             });
         });
@@ -1105,7 +1105,7 @@ export class SR5BaseActorSheet extends ActorSheet {
      * Parameterize skill filtering within getData and implement a general delay around it.
      * 
      * NOTE: Be aware of UTF-8/16 multi character input languages, using mulitple separate input symbol to form a single alphabet character.
-     * NOTE: This is ONLY necessary as shadowrun5e filters through the render -> getData -> template chain instead of 
+     * NOTE: This is ONLY necessary as shadowrun4e filters through the render -> getData -> template chain instead of
      *       hiding HTML elements based on their text.
      */
     async _onFilterSkills(event) {
@@ -1116,7 +1116,7 @@ export class SR5BaseActorSheet extends ActorSheet {
             this._filters.skills = event.currentTarget.value;
             this.render();
             //@ts-ignore TODO: foundry-vtt-types v10. Add to typing.
-        }, game.shadowrun5e.inputDelay);
+        }, game.shadowrun4e.inputDelay);
     }
 
     async _onRollSkill(event) {

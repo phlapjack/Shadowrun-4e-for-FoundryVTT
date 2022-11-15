@@ -45,7 +45,7 @@ export class ShadowrunTestDialog {
             rollModes: CONFIG.Dice.rollModes
         }
 
-        let templatePath = 'systems/shadowrun5e/dist/templates/rolls/roll-dialog.html';
+        let templatePath = 'systems/shadowrun4e/dist/templates/rolls/roll-dialog.html';
 
         const rollButtonName = 'roll'
         const buttons = {

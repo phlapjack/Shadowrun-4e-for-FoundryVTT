@@ -1,12 +1,12 @@
 <div class="scroll-area">
-    {{> 'systems/shadowrun5e/dist/templates/common/List/ListHeader.html'
+    {{> 'systems/shadowrun4e/dist/templates/common/List/ListHeader.html'
             name=(localize 'SR5.Programs')
             itemId='program'
             icons=(ItemHeaderIcons 'program')
             rightSide=(ItemHeaderRightSide 'program')
     }}
     {{#each itemType.program as |item iid|}}
-        {{> 'systems/shadowrun5e/dist/templates/common/List/ListItem.html'
+        {{> 'systems/shadowrun4e/dist/templates/common/List/ListItem.html'
                 img=item.img
                 name=item.name
                 itemId=item._id

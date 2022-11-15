@@ -72,7 +72,7 @@ export class SoakFlow {
         // SR5 194
         const knockedDown = damage.value > effectiveLimit || damage.value >= 10;
 
-        console.log(`Shadowrun5e | Determined target ${actor.id} knocked down status as: ${knockedDown}`, damage, actor);
+        console.log(`shadowrun4e | Determined target ${actor.id} knocked down status as: ${knockedDown}`, damage, actor);
 
         return knockedDown;
     }

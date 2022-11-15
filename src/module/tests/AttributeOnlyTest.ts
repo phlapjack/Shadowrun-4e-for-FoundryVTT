@@ -18,7 +18,7 @@ export class AttributeOnlyTest extends SuccessTest {
     data: AttributeOnlyTestData
 
     get _dialogTemplate() {
-        return 'systems/shadowrun5e/dist/templates/apps/dialogs/attribute-only-test-dialog.html';
+        return 'systems/shadowrun4e/dist/templates/apps/dialogs/attribute-only-test-dialog.html';
     }
     _prepareData(data, options): any {
         data = super._prepareData(data, options);
