@@ -10367,7 +10367,7 @@ var Helpers = class {
       for (const uuid of testData.targetActorsUuid) {
         const tokenDoc = yield fromUuid(uuid);
         if (!(tokenDoc instanceof TokenDocument)) {
-          console.error(`shadowrun4e | Been given testData with targets. UUID ${uuid} should point to a TokenDocument but doesn't`, tokenDoc);
+          console.error(`Shadowrun4e | Been given testData with targets. UUID ${uuid} should point to a TokenDocument but doesn't`, tokenDoc);
           continue;
         }
         if (!tokenDoc.actor)
@@ -27455,7 +27455,7 @@ var SupressionDefenseTest = class extends PhysicalDefenseTest {
 // src/module/hooks.ts
 var HooksManager = class {
   static registerHooks() {
-    console.log("Shadowrun 5e | Registering system hooks");
+    console.log("Shadowrun 4e | Registering system hooks");
     Hooks.once("init", HooksManager.init);
     Hooks.once("setup", HooksManager.setupAutocompleteInlinePropertiesSupport);
     Hooks.on("canvasInit", HooksManager.canvasInit);
